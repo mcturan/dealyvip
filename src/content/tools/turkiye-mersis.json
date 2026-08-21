@@ -5,7 +5,7 @@
   "category": "company-registry",
   "operator": "Turkish Ministry of Trade",
   "officialStatus": "OFFICIAL",
-  "accessType": "LOGIN_REQUIRED",
+  "accessType": "PUBLIC_WITH_LIMITATIONS",
   "languages": [
     "tr"
   ],
@@ -25,6 +25,6 @@
     "MERS\u0130S Number",
     "Company Name"
   ],
-  "accessLimitations": "Full access requires a Turkish e-Devlet (e-Government) login. Non-citizens must utilize local coordination.",
+  "accessLimitations": "Access to specific MERS\u0130S functions depends on the required service. Many queries require a Turkish e-Devlet (e-Government) login, which may restrict access for non-citizens.",
   "lastVerified": "2024-05-20"
 }

@@ -22,6 +22,6 @@
   "requiredInformation": [
     "EDRPOU Code"
   ],
-  "accessLimitations": "Deep analytics require a paid subscription. Basic profiling requires free registration.",
+  "accessLimitations": "Deep analytics require a paid subscription. Basic profiling requires free registration. Strict bot protection is in place for automated access.",
   "lastVerified": "2024-05-20"
 }

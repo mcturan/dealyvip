@@ -24,6 +24,6 @@
     "EDRPOU Code",
     "Company Name"
   ],
-  "accessLimitations": "Aggregates public data. Extremely useful when official USR is geo-blocked.",
+  "accessLimitations": "Aggregates public data. Extremely useful when official USR is geo-blocked. Note: Automated access is blocked by strict Cloudflare bot protection, requiring manual browser access.",
   "lastVerified": "2024-05-20"
 }
