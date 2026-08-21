@@ -141,9 +141,30 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"guides": {
-"en/pre-payment-checklist.md": {
-	id: "en/pre-payment-checklist.md";
-  slug: "en/pre-payment-checklist";
+"en/business-assistance-turkiye-ukraine.md": {
+	id: "en/business-assistance-turkiye-ukraine.md";
+  slug: "en/business-assistance-turkiye-ukraine";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"en/supplier-factory-verification-turkiye.md": {
+	id: "en/supplier-factory-verification-turkiye.md";
+  slug: "en/supplier-factory-verification-turkiye";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"en/verify-turkish-company.md": {
+	id: "en/verify-turkish-company.md";
+  slug: "en/verify-turkish-company";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"en/verify-ukrainian-company.md": {
+	id: "en/verify-ukrainian-company.md";
+  slug: "en/verify-ukrainian-company";
   body: string;
   collection: "guides";
   data: InferEntrySchema<"guides">

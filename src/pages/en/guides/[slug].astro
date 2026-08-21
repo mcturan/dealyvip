@@ -1,0 +1,88 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides', ({ id }) => id.startsWith('en/'));
+  return guides.map(guide => {
+    const slug = guide.id.replace('en/', '').replace(/\.md$/, '');
+    return {
+      params: { slug },
+      props: { guide },
+    };
+  });
+}
+
+const { guide } = Astro.props;
+const { Content } = await guide.render();
+
+// Fetch related tools if they exist
+const allTools = await getCollection('tools');
+const relatedToolIds = guide.data.relatedTools || [];
+const tools = relatedToolIds.length > 0 
+  ? allTools.filter(tool => relatedToolIds.includes(tool.id))
+  : [];
+
+const getStatusColor = (status: string) => {
+  switch(status) {
+    case 'OFFICIAL': return 'background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd;';
+    case 'INSTITUTIONAL': return 'background: #fef9c3; color: #a16207; border: 1px solid #fde047;';
+    case 'THIRD-PARTY': return 'background: #f3f4f6; color: #4b5563; border: 1px solid #e5e7eb;';
+    case 'INFORMATIONAL': return 'background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0;';
+    default: return 'background: #eee; color: #333;';
+  }
+};
+---
+<BaseLayout 
+  title={guide.data.title} 
+  description={guide.data.description} 
+  lang={guide.data.language}
+>
+  <div class="container" style="padding-top: var(--space-xl); padding-bottom: var(--space-xl); display: flex; flex-direction: column; align-items: center;">
+    
+    <article style="width: 100%; max-width: 800px;">
+      <a href="/en/guides/" class="text-muted no-underline" style="display: inline-block; margin-bottom: var(--space-md); font-size: 0.9rem;">&larr; Back to Guides</a>
+      
+      <h1 class="display-title" style="margin-bottom: var(--space-sm);">{guide.data.title}</h1>
+      <p class="lead text-muted" style="margin-bottom: var(--space-lg); border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-md);">
+        {guide.data.description}
+      </p>
+
+      <div class="prose" style="line-height: 1.7; font-size: 1.05rem; color: var(--color-text);">
+        <Content />
+      </div>
+      
+      {tools.length > 0 && (
+        <div style="margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--color-border);">
+          <h2 style="font-size: 1.5rem; margin-bottom: var(--space-md);">Related Verification Tools</h2>
+          <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--space-md);">
+            {tools.map(tool => (
+              <a href={`/en/tools/${tool.data.countryId}/`} class="card no-underline" style="display: block; transition: border-color 0.2s;">
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 0.5rem;">
+                  <h3 style="font-size: 1.1rem; margin: 0; color: var(--color-primary);">{tool.data.name}</h3>
+                  <span style={`font-size: 0.6rem; font-weight: 700; padding: 0.2rem 0.4rem; border-radius: 4px; ${getStatusColor(tool.data.officialStatus)}`}>
+                    {tool.data.officialStatus}
+                  </span>
+                </div>
+                <p class="text-muted" style="font-size: 0.85rem; margin: 0;">{tool.data.shortDescription}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </article>
+    
+  </div>
+</BaseLayout>
+<style is:global>
+  .prose h2 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; color: var(--color-slate-900); }
+  .prose h3 { font-size: 1.25rem; margin-top: 1.5rem; margin-bottom: 0.75rem; color: var(--color-slate-800); }
+  .prose p { margin-bottom: 1.25rem; }
+  .prose ul { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+  .prose li { margin-bottom: 0.5rem; }
+  .prose strong { font-weight: 600; color: var(--color-slate-900); }
+  .prose a { color: var(--color-primary); text-decoration: underline; }
+  .prose a:hover { text-decoration: none; }
+  
+  .card:hover { border-color: var(--color-primary); }
+</style>

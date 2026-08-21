@@ -1,6 +1,12 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import GuideCard from '../../components/GuideCard.astro';
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import GuideCard from '../../../components/GuideCard.astro';
+
+const guides = await getCollection('guides', ({ id }) => id.startsWith('en/'));
+
+// Sort guides generally or just pass them
+// Assuming GuideCard expects title, category, url
 ---
 <BaseLayout title="Business Guides" description="Cross-border business guides for verification, compliance, and sourcing." lang="en">
   <div class="container section">
@@ -8,10 +14,16 @@ import GuideCard from '../../components/GuideCard.astro';
     <p class="lead mb-4">Practical intelligence for cross-border operations.</p>
     
     <div class="grid grid-cols-3">
-      <GuideCard 
-        title="Overseas Supplier Pre-Payment Checklist" 
-        category="Verification & Trust" 
-      />
+      {guides.map(guide => {
+        const slug = guide.id.replace('en/', '').replace(/\.md$/, '');
+        return (
+          <GuideCard 
+            title={guide.data.title} 
+            category={guide.data.topic} 
+            url={`/en/guides/${slug}/`}
+          />
+        );
+      })}
     </div>
     
     <h2 class="section-title" style="margin-top: var(--space-xl);">Content Categories</h2>

@@ -11,6 +11,7 @@ const guidesCollection = defineCollection({
     priority: z.number().default(0),
     related_lang_id: z.string().optional(),
     lastUpdated: z.date(),
+    relatedTools: z.array(z.string()).optional(),
     isDraft: z.boolean().default(false),
   }),
 });
