@@ -22,7 +22,7 @@ const { title, description, lang = 'en', alternatives = [] } = Astro.props;
 ---
 <html lang={lang}>
   <head>
-    <MetaHead title={title} description={description} />
+    <MetaHead title={title} description={description} alternatives={alternatives} />
   </head>
   <body>
     <LanguageSwitcher currentLang={lang} alternatives={alternatives} />

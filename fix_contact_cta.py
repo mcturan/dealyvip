@@ -1,4 +1,9 @@
----
+import re
+
+with open('src/components/ContactCTA.astro', 'r') as f:
+    content = f.read()
+
+new_content = """---
 export interface Props {
   context?: 'verification' | 'assistance' | 'general';
   lang?: string;
@@ -74,3 +79,6 @@ if (context === 'verification') {
     )}
   </div>
 </div>
+"""
+with open('src/components/ContactCTA.astro', 'w') as f:
+    f.write(new_content)

@@ -225,6 +225,48 @@ declare module 'astro:content' {
   collection: "guides";
   data: InferEntrySchema<"guides">
 } & { render(): Render[".md"] };
+"tr/fabrika-ziyareti-hazirligi.md": {
+	id: "tr/fabrika-ziyareti-hazirligi.md";
+  slug: "tr/fabrika-ziyareti-hazirligi";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"tr/ukrayna-sirket-sorgulama.md": {
+	id: "tr/ukrayna-sirket-sorgulama.md";
+  slug: "tr/ukrayna-sirket-sorgulama";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"tr/yurtdisi-tedarikci-dogrulama.md": {
+	id: "tr/yurtdisi-tedarikci-dogrulama.md";
+  slug: "tr/yurtdisi-tedarikci-dogrulama";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"uk/perevirka-turetskoyi-kompaniyi.md": {
+	id: "uk/perevirka-turetskoyi-kompaniyi.md";
+  slug: "uk/perevirka-turetskoyi-kompaniyi";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"uk/perevirka-zavodu-v-turechchyni.md": {
+	id: "uk/perevirka-zavodu-v-turechchyni.md";
+  slug: "uk/perevirka-zavodu-v-turechchyni";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"uk/pidhotovka-do-vizytu-na-zavod.md": {
+	id: "uk/pidhotovka-do-vizytu-na-zavod.md";
+  slug: "uk/pidhotovka-do-vizytu-na-zavod";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
 };
 
 	};

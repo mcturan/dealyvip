@@ -1,4 +1,17 @@
----
+import re
+
+with open('src/layouts/BaseLayout.astro', 'r') as f:
+    layout = f.read()
+
+layout = layout.replace(
+    '<MetaHead title={title} description={description} />',
+    '<MetaHead title={title} description={description} alternatives={alternatives} />'
+)
+
+with open('src/layouts/BaseLayout.astro', 'w') as f:
+    f.write(layout)
+
+meta_head = """---
 interface AlternateLink {
   code: string;
   name: string;
@@ -25,3 +38,6 @@ const { title, description, canonical, alternatives = [] } = Astro.props;
 {alternatives.map(alt => (
   <link rel="alternate" hreflang={alt.code} href={`https://dealyvip.com${alt.url}`} />
 ))}
+"""
+with open('src/components/MetaHead.astro', 'w') as f:
+    f.write(meta_head)

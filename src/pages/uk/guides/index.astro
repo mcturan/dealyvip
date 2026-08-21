@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import GuideCard from '../../../components/GuideCard.astro';
+
+const guides = await getCollection('guides', ({ id }) => id.startsWith('uk/'));
+---
+<BaseLayout title="Бізнес-посібники" description="Посібники з транскордонного бізнесу, перевірки компаній та місцевої координації.">
+  <div class="container section">
+    <h1 class="display-title">Бізнес-посібники</h1>
+    <p class="lead mb-4">Практичні інструкції для транскордонних операцій та перевірки.</p>
+    
+    <div class="grid grid-cols-3">
+      {guides.map(guide => {
+        const slug = guide.id.replace('uk/', '').replace(/\.md$/, '');
+        return (
+          <GuideCard 
+            title={guide.data.title} 
+            category={guide.data.topic} 
+            url={`/uk/guides/${slug}/`}
+          />
+        );
+      })}
+    </div>
+  </div>
+</BaseLayout>

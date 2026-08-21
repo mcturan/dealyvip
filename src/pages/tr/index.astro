@@ -4,13 +4,24 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 const alternatives = [
   { code: 'en', name: 'English', url: '/en/' },
   { code: 'tr', name: 'Türkçe', url: '/tr/' },
-  { code: 'uk', name: 'Українська', url: '/uk/' },
-  { code: 'ru', name: 'Русский', url: '/ru/' }
+  { code: 'uk', name: 'Українська', url: '/uk/' }
 ];
 ---
-<BaseLayout title="Ana Sayfa" description="Türkiye, Ukrayna, Rusya ve İran'da bağımsız doğrulama ve yerel destek." lang="tr" alternatives={alternatives}>
-  <section class="text-center mb-2" style="padding: 4rem 1rem;">
-    <h1 style="font-size: 2.5rem;">Sınır Ötesi Ticareti Güvenle Yönetin</h1>
-    <p style="font-size: 1.25rem; color: #555;">(Placeholder content for Turkish home page)</p>
+<BaseLayout 
+  title="Bağımsız İş Doğrulama & Yerel Koordinasyon" 
+  description="DealyVIP, yurtdışı tedarikçi doğrulaması ve yerel asistanlık süreçlerinde sınır ötesi koordinasyon sağlar." 
+  lang="tr" 
+  alternatives={alternatives}
+>
+  <section class="section text-center" style="padding-top: var(--space-xl); padding-bottom: var(--space-lg);">
+    <div class="container">
+      <h1 class="display-title">Sınır Ötesi Ticaret,<br/>Yerinde Doğrulandı</h1>
+      <p class="lead" style="margin: 0 auto var(--space-md) auto;">
+        DealyVIP, Türkçe konuşan iş dünyası için sınır ötesi şirket doğrulama, dolandırıcılığı önleme ve yerinde gözlem koordinasyonu (özellikle Türkiye - Ukrayna hattında) rehberliği sağlar.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="/tr/guides/" class="btn btn-accent">Rehberleri İncele</a>
+      </div>
+    </div>
   </section>
 </BaseLayout>
