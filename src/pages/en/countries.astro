@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CountryCard from '../../components/CountryCard.astro';
+---
+<BaseLayout title="Countries" description="Explore business guides and assistance availability across our target countries." lang="en">
+  <div class="container section">
+    <h1 class="display-title">Locations</h1>
+    <p class="lead mb-4">Explore our target markets. Country-specific guides and detailed intelligence hubs are being actively developed during this beta phase.</p>
+    
+    <div class="grid grid-cols-2">
+      <CountryCard name="Türkiye" description="Sourcing & Verification. (Guides coming soon)" />
+      <CountryCard name="Ukraine" description="Operating under constraints. (Guides coming soon)" />
+      <CountryCard name="Russia" description="Compliance & Exemptions. (Guides coming soon)" />
+      <CountryCard name="Iran" description="Sanctions & Restrictions. (Guides coming soon)" />
+    </div>
+  </div>
+</BaseLayout>

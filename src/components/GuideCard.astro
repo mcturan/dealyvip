@@ -2,11 +2,18 @@
 interface Props {
   title: string;
   category: string;
-  url: string;
+  url?: string;
 }
 const { title, category, url } = Astro.props;
 ---
-<a href={url} class="card card-hover no-underline" style="display: block;">
-  <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-accent); font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">{category}</span>
-  <h3 style="margin-bottom: 0; font-size: 1.1rem;">{title}</h3>
-</a>
+{url ? (
+  <a href={url} class="card card-hover no-underline" style="display: block;">
+    <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-accent); font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">{category}</span>
+    <h3 style="margin-bottom: 0; font-size: 1.1rem;">{title}</h3>
+  </a>
+) : (
+  <div class="card" style="display: block; opacity: 0.9;">
+    <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-slate-400); font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">{category}</span>
+    <h3 style="margin-bottom: 0; font-size: 1.1rem; color: var(--color-text-muted);">{title}</h3>
+  </div>
+)}

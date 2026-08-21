@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import GuideCard from '../../components/GuideCard.astro';
+---
+<BaseLayout title="Business Guides" description="Cross-border business guides for verification, compliance, and sourcing." lang="en">
+  <div class="container section">
+    <h1 class="display-title">Business Guides</h1>
+    <p class="lead mb-4">Practical intelligence for cross-border operations.</p>
+    
+    <div class="grid grid-cols-3">
+      <GuideCard 
+        title="Overseas Supplier Pre-Payment Checklist" 
+        category="Verification & Trust" 
+      />
+    </div>
+    
+    <h2 class="section-title" style="margin-top: var(--space-xl);">Content Categories</h2>
+    <p class="mb-2">We are actively developing detailed guides across the following areas:</p>
+    <ul style="padding-left: 1.5rem; color: var(--color-text-muted);">
+      <li class="mb-1"><strong>Verification & Trust:</strong> Identity checks, corporate registry navigation, and anti-fraud protocols.</li>
+      <li class="mb-1"><strong>Supplier Search & Matchmaking:</strong> Finding reliable manufacturing and trade partners.</li>
+      <li class="mb-1"><strong>Local Assistance & Travel:</strong> On-the-ground support and cultural intelligence.</li>
+      <li class="mb-1"><strong>Market Entry & Orientation:</strong> Strategic planning for new jurisdictions.</li>
+      <li class="mb-1"><strong>Logistics Coordination & Customs:</strong> Navigating physical trade where applicable.</li>
+    </ul>
+  </div>
+</BaseLayout>

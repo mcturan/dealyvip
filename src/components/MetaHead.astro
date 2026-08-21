@@ -3,10 +3,9 @@ interface Props {
   title: string;
   description: string;
   canonical?: string;
-  lang?: string;
 }
 
-const { title, description, canonical, lang = 'en' } = Astro.props;
+const { title, description, canonical } = Astro.props;
 ---
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
