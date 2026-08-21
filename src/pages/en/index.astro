@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import CTASection from '../../components/CTASection.astro';
 import CountryCard from '../../components/CountryCard.astro';
 import GuideCard from '../../components/GuideCard.astro';
+import NeedCard from '../../components/NeedCard.astro';
 
 const alternatives = [
   { code: 'en', name: 'English', url: '/en/' },
@@ -11,33 +12,99 @@ const alternatives = [
   { code: 'ru', name: 'Русский', url: '/ru/' }
 ];
 ---
-<BaseLayout title="Home" description="Independent verification, supplier discovery, and local assistance in Türkiye, Ukraine, Russia, and Iran." lang="en" alternatives={alternatives}>
-  <section class="text-center mb-2" style="padding: 4rem 1rem;">
-    <h1 style="font-size: 2.5rem;">Navigate Cross-Border Business with Confidence</h1>
-    <p style="font-size: 1.25rem; color: #555; max-width: 800px; margin: 0 auto 2rem;">Independent verification, supplier discovery, and local assistance in Türkiye, Ukraine, Russia, and Iran.</p>
-    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-      <a href="/en/assistance/" class="btn">Find Local Assistance</a>
-      <a href="/en/guides/" class="btn" style="background: white; color: var(--color-primary); border: 2px solid var(--color-primary);">Read Business Guides</a>
+<BaseLayout 
+  title="Independent Business Verification & Local Assistance" 
+  description="DealyVIP coordinates independent verification, supplier discovery, and local assistance in Türkiye, Ukraine, Russia, and Iran." 
+  lang="en" 
+  alternatives={alternatives}
+>
+
+  <section class="section text-center" style="padding-top: var(--space-xl); padding-bottom: var(--space-lg);">
+    <div class="container">
+      <h1 class="display-title">Cross-Border Business,<br/>Verified on the Ground</h1>
+      <p class="lead" style="margin: 0 auto var(--space-md) auto;">
+        We coordinate independent verification, supplier discovery, and local assistance across Türkiye, Ukraine, Russia, and Iran. Avoid fraud, navigate constraints, and establish secure trade channels.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="/en/assistance/" class="btn btn-accent">Request Local Assistance</a>
+        <a href="/en/guides/" class="btn btn-outline">Read Business Guides</a>
+      </div>
     </div>
   </section>
 
-  <section class="mb-2">
-    <h2>Explore by Country</h2>
-    <div class="grid grid-cols-4">
-      <CountryCard name="Türkiye" description="Market Entry, Suppliers, Logistics" url="/en/turkiye/" />
-      <CountryCard name="Ukraine" description="Operations under constraint" url="/en/ukraine/" />
-      <CountryCard name="Russia" description="Compliance & Exemptions" url="/en/russia/" />
-      <CountryCard name="Iran" description="Trade Restrictions" url="/en/iran/" />
+  <section class="section section-bg-alt">
+    <div class="container">
+      <div style="max-width: 600px; margin-bottom: var(--space-md);">
+        <h2 class="section-title">Explore by Country</h2>
+        <p class="text-muted">Regional knowledge mapping compliance environments, operational constraints, and on-the-ground reality.</p>
+      </div>
+      <div class="grid grid-cols-4">
+        <CountryCard name="Türkiye" description="Sourcing & Verification" url="/en/turkiye/" />
+        <CountryCard name="Ukraine" description="Operating under constraints" url="/en/ukraine/" />
+        <CountryCard name="Russia" description="Compliance & Exemptions" url="/en/russia/" />
+        <CountryCard name="Iran" description="Sanctions & Restrictions" url="/en/iran/" />
+      </div>
     </div>
   </section>
 
-  <section class="mb-2">
-    <h2>Featured Guides</h2>
-    <div class="grid grid-cols-2">
-      <GuideCard title="Pre-Payment Supplier Checklist" category="Verification & Trust" url="/en/guides/verification/pre-payment-checklist/" />
-      <GuideCard title="Finding Reliable Suppliers in Türkiye" category="Sourcing" url="/en/guides/sourcing/turkiye-suppliers/" />
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Explore by Need</h2>
+      <div class="grid grid-cols-3">
+        <NeedCard title="Verify a Company" />
+        <NeedCard title="Find Suppliers" />
+        <NeedCard title="Visit a Factory or Business" />
+        <NeedCard title="Arrange a Business Meeting" />
+        <NeedCard title="Find Local Assistance" url="/en/assistance/" />
+        <NeedCard title="Business Travel & Communication" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-bg-alt">
+    <div class="container">
+      <h2 class="section-title">Business Guides</h2>
+      <div class="grid grid-cols-3">
+        <GuideCard 
+          title="Overseas Supplier Pre-Payment Checklist" 
+          category="Verification & Trust" 
+          url="/en/guides/verification/pre-payment-checklist/" 
+        />
+        <!-- Structural placeholder cards to demonstrate layout -->
+        <GuideCard 
+          title="Understanding Turkish Corporate Registries" 
+          category="Market Entry" 
+          url="/en/guides/turkiye/corporate-registry-overview/" 
+        />
+        <GuideCard 
+          title="Navigating Sanctions: Sector Exemptions" 
+          category="Compliance" 
+          url="/en/guides/compliance/sanctions-exemptions-overview/" 
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: var(--content-width); margin: 0 auto;">
+      <h2 class="section-title text-center">The DealyVIP Approach</h2>
+      <div style="display: flex; flex-direction: column; gap: var(--space-md); margin-top: var(--space-md);">
+        <div>
+          <h3>Clear Information</h3>
+          <p class="text-muted">We do not provide vague consulting. We provide exact procedural guides on how to establish trust and execute transactions in challenging environments.</p>
+        </div>
+        <div>
+          <h3>Acknowledged Limitations</h3>
+          <p class="text-muted">We state clearly what is impossible. We do not invent workarounds for hard sanctions or pretend high-risk environments are safe.</p>
+        </div>
+        <div>
+          <h3>Coordinated On-the-Ground Support</h3>
+          <p class="text-muted">When remote verification is insufficient, we coordinate with local independent professionals to physically inspect goods, visit factories, or facilitate meetings.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <CTASection />
+
 </BaseLayout>

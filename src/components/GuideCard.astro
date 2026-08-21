@@ -6,7 +6,7 @@ interface Props {
 }
 const { title, category, url } = Astro.props;
 ---
-<a href={url} class="card" style="display: block; text-decoration: none; color: inherit;">
-  <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--color-primary); font-weight: bold;">{category}</span>
-  <h3 style="margin-top: 0.5rem; font-size: 1.1rem;">{title}</h3>
+<a href={url} class="card card-hover no-underline" style="display: block;">
+  <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-accent); font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">{category}</span>
+  <h3 style="margin-bottom: 0; font-size: 1.1rem;">{title}</h3>
 </a>

@@ -6,14 +6,16 @@ interface Props {
   btnUrl?: string;
 }
 const { 
-  title = "Need tailored local assistance?", 
-  text = "Tell us your requirements and we will coordinate independent local support.",
+  title = "Require tailored local assistance?", 
+  text = "Contact us to coordinate independent on-the-ground support.",
   btnText = "Contact DealyVIP",
   btnUrl = "/en/contact/"
 } = Astro.props;
 ---
-<section class="card text-center mb-2" style="background: var(--color-secondary); padding: 3rem 1.5rem;">
-  <h2>{title}</h2>
-  <p style="margin-bottom: 1.5rem;">{text}</p>
-  <a href={btnUrl} class="btn">{btnText}</a>
+<section class="section section-bg-alt text-center" style="margin-top: var(--space-xl);">
+  <div class="container">
+    <h2 class="section-title">{title}</h2>
+    <p class="lead" style="margin: 0 auto var(--space-md) auto;">{text}</p>
+    <a href={btnUrl} class="btn btn-accent">{btnText}</a>
+  </div>
 </section>
