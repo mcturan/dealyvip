@@ -5,7 +5,7 @@ Define how the project is managed and how AI execution is controlled.
 
 ## Roles
 ### Human Project Owners
-The founder and ChatGPT jointly direct strategy, requirements, prioritization, and review.
+The human project owners direct strategy, requirements, prioritization, and review.
 
 ### Execution Agent
 Antigravity CLI using Gemini 3.1 Pro performs implementation and document work according to explicit sprint instructions.
@@ -39,3 +39,6 @@ A sprint is complete only when:
 - 02_PROJECT_PRINCIPLES.md
 - ROADMAP.md
 - DECISIONS.md
+
+## Status
+Confirmed.

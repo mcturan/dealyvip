@@ -10,14 +10,18 @@ The project should be useful to a person or company whose starting point is:
 
 “I want to do business in this country, but I do not know where to start or whom to trust.”
 
-## Strategic Positioning Questions
-This document must establish:
-- The core promise
-- Primary and secondary audiences
-- The exact meaning of “business gateway”
-- Why DealyVIP is different from a generic consultancy
-- The initial market focus
-- The long-term direction without creating premature commitments
+## Core Promise
+To help people and companies navigate cross-border business through information, trust, local access, verification, coordination, and practical business assistance, connecting them to appropriate professionals where genuinely available.
+
+## Primary and Secondary Audiences
+- Primary: Businesses and individuals seeking to enter or operate within Türkiye, Ukraine, Russia, or Iran.
+- Secondary: Professionals and local service providers seeking verified cross-border coordination.
+
+## The meaning of "Business Gateway"
+A gateway provides information, coordinates practical assistance, and verifies connections, but does not act as a marketplace, payment platform, B2B database, or complex software system. The customer journey is: Information → Trust → Contact.
+
+## Differentiation
+DealyVIP emphasizes direct answers, AI-accessible structured information, and verified local access over generic marketing or complex technology platforms. Trust is the primary product.
 
 ## Constraint
 Do not create unsupported claims about network size, offices, partners, certifications, experience, or geographic presence.
@@ -26,3 +30,6 @@ Do not create unsupported claims about network size, offices, partners, certific
 - 05_TARGET_MARKETS.md
 - 07_CUSTOMER_PROBLEMS.md
 - 08_VALUE_PROPOSITION.md
+
+## Status
+Confirmed.

@@ -49,3 +49,6 @@ Build the approved website.
 
 ## Sprint 12 — QA and Launch Preparation
 Perform functional, responsive, accessibility, performance, content, and deployment checks.
+
+## Status
+Confirmed.

@@ -28,3 +28,6 @@ Detailed language architecture will be decided in a later sprint.
 ## Related Documents
 - 06_COUNTRY_CAPABILITY_MATRIX.md
 - 03_VISION_AND_POSITIONING.md
+
+## Status
+Confirmed.

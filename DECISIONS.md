@@ -31,3 +31,11 @@ Record material decisions and their rationale.
 - Status: Accepted
 - Decision: Initial focus is Türkiye, Ukraine, Russia, and Iran.
 - Rationale: These are the markets currently selected for the project.
+
+### DEC-004 — Service Availability Validation
+- Date: 2026-08-21
+- Status: VALIDATION REQUIRED
+- Decision: Genuinely available services in Türkiye, Ukraine, Russia, and Iran must be operationally validated before being listed as active.
+- Rationale: Project principle of "No unsupported claims" and "Country inclusion does not equal service availability".
+- Consequences: Website service claims are blocked until the Country Capability Matrix is updated with validated delivery paths.
+- Related documents: 06_COUNTRY_CAPABILITY_MATRIX.md

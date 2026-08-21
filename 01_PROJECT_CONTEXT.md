@@ -23,4 +23,4 @@ Only capabilities that can actually be delivered, directly or through clearly id
 - 04_WORKING_METHOD.md
 
 ## Status
-Draft — to be refined in Sprint 1.
+Confirmed.

@@ -7,7 +7,7 @@ This repository is the strategic and operational source of truth for the DealyVI
 Sprint 1 — Project Identity & Working System.
 
 ## Operating Model
-- Human Project Owners: Founder + ChatGPT
+- Human Project Owners
 - Execution Agent: Antigravity CLI / Gemini 3.1 Pro
 - Source Control: GitHub
 - Working method: sprint-based, documentation-first, review before the next sprint

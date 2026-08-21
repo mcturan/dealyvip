@@ -22,3 +22,6 @@ Define non-negotiable principles that guide business, content, design, and techn
 - 04_WORKING_METHOD.md
 - 09_SCOPE_AND_BOUNDARIES.md
 - DECISIONS.md
+
+## Status
+Confirmed.
