@@ -285,6 +285,16 @@ declare module 'astro:content' {
 };
 };
 "tools": {
+"iran-compliance": {
+	id: "iran-compliance";
+  collection: "tools";
+  data: InferEntrySchema<"tools">
+};
+"russia-compliance": {
+	id: "russia-compliance";
+  collection: "tools";
+  data: InferEntrySchema<"tools">
+};
 "turkiye-ivd": {
 	id: "turkiye-ivd";
   collection: "tools";
@@ -297,6 +307,11 @@ declare module 'astro:content' {
 };
 "turkiye-ticaret-sicil": {
 	id: "turkiye-ticaret-sicil";
+  collection: "tools";
+  data: InferEntrySchema<"tools">
+};
+"turkiye-turkpatent": {
+	id: "turkiye-turkpatent";
   collection: "tools";
   data: InferEntrySchema<"tools">
 };

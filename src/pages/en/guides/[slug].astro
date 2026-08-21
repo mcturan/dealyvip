@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import ContactCTA from '../../../components/ContactCTA.astro';
+import VerificationLimitations from '../../../components/VerificationLimitations.astro';
 
 export async function getStaticPaths() {
   const guides = await getCollection('guides', ({ id }) => id.startsWith('en/'));
@@ -80,6 +81,7 @@ const getStatusColor = (status: string) => {
       {tools.length > 0 && (
         <div style="margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--color-border);">
           <h2 style="font-size: 1.5rem; margin-bottom: var(--space-md);">Related Verification Tools</h2>
+          <VerificationLimitations context="guides" />
           <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--space-md);">
             {tools.map(tool => (
               <a href={`/en/tools/${tool.data.countryId}/`} class="card no-underline" style="display: block; transition: border-color 0.2s;">

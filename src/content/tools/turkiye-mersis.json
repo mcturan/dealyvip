@@ -1,10 +1,14 @@
 {
   "countryId": "turkiye",
-  "name": "MERSİS (Central Registration System)",
-  "shortDescription": "The primary official commercial registry system of Türkiye.",
+  "name": "MERS\u0130S (Central Registration System)",
+  "shortDescription": "The primary official commercial registry system of T\u00fcrkiye.",
   "category": "company-registry",
   "operator": "Turkish Ministry of Trade",
   "officialStatus": "OFFICIAL",
+  "accessType": "LOGIN_REQUIRED",
+  "languages": [
+    "tr"
+  ],
   "url": "https://mersis.ticaret.gov.tr",
   "whatItCanVerify": [
     "Legal corporate existence",
@@ -16,6 +20,11 @@
     "Manufacturing capacity",
     "Physical presence of a factory"
   ],
-  "accessLimitations": "Full access requires a Turkish e-Devlet (e-Government) login. Basic existence checks may be accessible but are restricted for foreigners.",
+  "requiredInformation": [
+    "Tax Number (VKN)",
+    "MERS\u0130S Number",
+    "Company Name"
+  ],
+  "accessLimitations": "Full access requires a Turkish e-Devlet (e-Government) login. Non-citizens must utilize local coordination.",
   "lastVerified": "2024-05-20"
 }

@@ -1,0 +1,30 @@
+{
+  "countryId": "turkiye",
+  "name": "TURKPATENT",
+  "shortDescription": "Official database for trademarks, patents, and designs.",
+  "category": "intellectual-property",
+  "operator": "Turkish Patent and Trademark Office",
+  "officialStatus": "OFFICIAL",
+  "accessType": "PUBLIC",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "url": "https://epats.turkpatent.gov.tr",
+  "whatItCanVerify": [
+    "Trademark ownership",
+    "Patent registration status",
+    "Design protection"
+  ],
+  "whatItCannotVerify": [
+    "Company existence",
+    "Export authorization"
+  ],
+  "requiredInformation": [
+    "Brand Name",
+    "Applicant Name",
+    "Application Number"
+  ],
+  "accessLimitations": "Publicly searchable. Advanced features require login.",
+  "lastVerified": "2024-05-20"
+}

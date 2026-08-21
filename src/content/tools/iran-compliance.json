@@ -1,0 +1,16 @@
+{
+  "countryId": "iran",
+  "name": "Iran Trade & Compliance Orientation",
+  "shortDescription": "Understanding severe banking restrictions and sanctions boundaries.",
+  "category": "compliance",
+  "operator": "DealyVIP",
+  "officialStatus": "INFORMATIONAL",
+  "accessType": "INFORMATION_ONLY",
+  "languages": ["en"],
+  "url": "/en/what-we-do/",
+  "whatItCanVerify": ["DealyVIP's operational boundaries regarding Iran"],
+  "whatItCannotVerify": ["Categorical legality of your specific trade", "Sanctions evasion techniques"],
+  "requiredInformation": [],
+  "accessLimitations": "Strictly an informational boundary statement. We do not provide automated ILENC lookups.",
+  "lastVerified": "2024-05-20"
+}

@@ -1,0 +1,37 @@
+---
+export interface Props {
+  context?: 'tools' | 'guides';
+}
+const { context = 'tools' } = Astro.props;
+---
+<div class="verification-limitations" style="background: var(--color-slate-50); border: 1px solid var(--color-border); border-radius: 8px; padding: var(--space-lg); margin: var(--space-xl) 0;">
+  <h3 style="margin-top: 0; font-size: 1.2rem; color: var(--color-primary);">What Public Verification Can and Cannot Tell You</h3>
+  <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 1rem;">
+    Public records and official registries are critical for basic due diligence, but they have inherent limits.
+  </p>
+  
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+    <div>
+      <strong style="color: #166534; display: block; margin-bottom: 0.5rem;">✓ Registries CAN Prove:</strong>
+      <ul style="font-size: 0.9rem; color: #374151; padding-left: 1.2rem; margin: 0;">
+        <li style="margin-bottom: 0.25rem;">Legal corporate existence at time of registration</li>
+        <li style="margin-bottom: 0.25rem;">Registered corporate address</li>
+        <li style="margin-bottom: 0.25rem;">Authorized legal representatives</li>
+        <li style="margin-bottom: 0.25rem;">Official tax or company ID numbers</li>
+      </ul>
+    </div>
+    <div>
+      <strong style="color: #991b1b; display: block; margin-bottom: 0.5rem;">✗ Registries CANNOT Prove:</strong>
+      <ul style="font-size: 0.9rem; color: #374151; padding-left: 1.2rem; margin: 0;">
+        <li style="margin-bottom: 0.25rem;">Current product quality or manufacturing capability</li>
+        <li style="margin-bottom: 0.25rem;">Availability of claimed inventory</li>
+        <li style="margin-bottom: 0.25rem;">Current financial health or hidden debts</li>
+        <li style="margin-bottom: 0.25rem;">Safety of sending an advance payment</li>
+      </ul>
+    </div>
+  </div>
+  
+  <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+    If you require certainty regarding production capacity or quality, public information is insufficient. In such cases, coordinating a physical factory visit or hiring a local independent professional is strongly recommended.
+  </p>
+</div>

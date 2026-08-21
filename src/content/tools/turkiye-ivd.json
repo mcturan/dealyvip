@@ -1,19 +1,30 @@
 {
   "countryId": "turkiye",
-  "name": "Interactive Tax Office (İVD)",
-  "shortDescription": "Official tax identification verification portal.",
-  "category": "tax-fiscal",
+  "name": "\u0130nteraktif Vergi Dairesi (\u0130VD)",
+  "shortDescription": "Official portal to verify Turkish Tax Numbers (VKN).",
+  "category": "tax-invoice",
   "operator": "Turkish Revenue Administration",
   "officialStatus": "OFFICIAL",
+  "accessType": "PUBLIC",
+  "languages": [
+    "tr"
+  ],
   "url": "https://ivd.gib.gov.tr",
   "whatItCanVerify": [
-    "Validity of a Tax ID Number (VKN)",
-    "Tax office registration"
+    "Tax number validity",
+    "Registered company name",
+    "Tax office alignment"
   ],
   "whatItCannotVerify": [
-    "Company debt or tax compliance status",
-    "General commercial reliability"
+    "Tax debt amount",
+    "Bank account ownership",
+    "Commercial reliability"
   ],
-  "accessLimitations": "Requires knowing the exact tax office and tax number of the entity.",
+  "requiredInformation": [
+    "Tax Number (VKN)",
+    "Province",
+    "Tax Office"
+  ],
+  "accessLimitations": "Accessible without login for basic VKN validation. Captcha required.",
   "lastVerified": "2024-05-20"
 }

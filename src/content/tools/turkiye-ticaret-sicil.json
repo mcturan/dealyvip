@@ -1,20 +1,28 @@
 {
   "countryId": "turkiye",
-  "name": "Turkish Trade Registry Gazette",
-  "shortDescription": "Official gazette publishing mandatory corporate announcements.",
+  "name": "Ticaret Sicil Gazetesi",
+  "shortDescription": "Official Trade Registry Gazette for corporate structure and history.",
   "category": "company-registry",
-  "operator": "Union of Chambers and Commodity Exchanges of Türkiye (TOBB)",
+  "operator": "Union of Chambers and Commodity Exchanges of T\u00fcrkiye (TOBB)",
   "officialStatus": "OFFICIAL",
+  "accessType": "REGISTRATION_REQUIRED",
+  "languages": [
+    "tr"
+  ],
   "url": "https://www.ticaretsicil.gov.tr",
   "whatItCanVerify": [
-    "Board of directors appointments",
-    "Capital structure changes",
-    "Official headquarters address changes"
+    "Board of directors changes",
+    "Capital structure updates",
+    "Registered corporate address changes"
   ],
   "whatItCannotVerify": [
-    "Current operational capacity",
-    "Export history"
+    "Real-time operational status",
+    "Current production capacity"
   ],
-  "accessLimitations": "Requires free registration to view full gazette PDFs.",
+  "requiredInformation": [
+    "Company Name",
+    "MERS\u0130S Number or Trade Registry Number"
+  ],
+  "accessLimitations": "Requires creating a free account. Interface is strictly in Turkish.",
   "lastVerified": "2024-05-20"
 }

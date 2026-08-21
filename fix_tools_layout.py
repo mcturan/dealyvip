@@ -1,31 +1,10 @@
----
-import { getCollection } from 'astro:content';
-import BaseLayout from '../../../layouts/BaseLayout.astro';
-import VerificationLimitations from '../../../components/VerificationLimitations.astro';
+import re
 
-export async function getStaticPaths() {
-  const countries = await getCollection('countries');
-  return countries.map(country => ({
-    params: { country: country.id },
-    props: { country },
-  }));
-}
+with open('src/pages/en/tools/[country].astro', 'r') as f:
+    content = f.read()
 
-const { country } = Astro.props;
-const allTools = await getCollection('tools');
-const countryTools = allTools.filter(tool => tool.data.countryId === country.id);
-
-// Group tools by category
-const toolsByCategory = countryTools.reduce((acc, tool) => {
-  const cat = tool.data.category;
-  if (!acc[cat]) {
-    acc[cat] = [];
-  }
-  acc[cat].push(tool);
-  return acc;
-}, {} as Record<string, typeof countryTools>);
-
-const formatCategory = (cat: string) => {
+# Add getAccessTypeColor
+helpers = """const formatCategory = (cat: string) => {
   return cat.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 };
 
@@ -53,33 +32,16 @@ const getAccessTypeColor = (type: string) => {
     case 'INFORMATION_ONLY': return 'color: #4b5563;';
     default: return 'color: #333;';
   }
-};
----
-<BaseLayout 
-  title={`${country.data.name} Verification Tools`} 
-  description={`Official and third-party business verification tools for ${country.data.name}.`} 
-  lang="en"
->
-  <div class="container" style="padding-top: var(--space-xl); padding-bottom: var(--space-xl);">
-    
-    <a href="/en/tools/" class="text-muted no-underline" style="display: inline-block; margin-bottom: var(--space-md); font-size: 0.9rem;">&larr; Back to All Countries</a>
-    
-    <h1 class="display-title" style="margin-bottom: var(--space-sm);">{country.data.name} Verification Tools</h1>
-    <p class="lead text-muted" style="max-width: 800px; margin-bottom: var(--space-xl);">
-      {country.data.description} Please review the limitations of each tool carefully before relying on the data for financial decisions.
-    </p>
-    
-    <VerificationLimitations />
+};"""
 
-    {Object.entries(toolsByCategory).length === 0 ? (
-      <p>No verified tools available for this country yet.</p>
-    ) : (
-      Object.entries(toolsByCategory).map(([category, tools]) => (
-        <div style="margin-bottom: var(--space-xl);">
-          <h2 style="font-size: 1.5rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.5rem; margin-bottom: var(--space-md);">{formatCategory(category)}</h2>
-          <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: var(--space-md);">
-            {tools.map(tool => (
-              <div class="card" style="display: flex; flex-direction: column; gap: 1rem;">
+content = re.sub(
+    r"const formatCategory[\s\S]*?(?=\-\-\-)",
+    helpers + "\n",
+    content
+)
+
+# Replace the card content to include the new fields
+card_new = """<div class="card" style="display: flex; flex-direction: column; gap: 1rem;">
                 <div>
                   <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 0.5rem;">
                     <h3 style="font-size: 1.25rem; margin: 0;">{tool.data.name}</h3>
@@ -130,11 +92,15 @@ const getAccessTypeColor = (type: string) => {
                     <span class="text-muted" style="display: block; font-size: 0.7rem; font-weight: 500;">LANG: {(tool.data.languages || []).join(', ').toUpperCase()}</span>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      ))
-    )}
-  </div>
-</BaseLayout>
+              </div>"""
+
+content = re.sub(
+    r'<div class="card" style="display: flex; flex-direction: column; gap: 1rem;">.*?</div>(?=\n\s*</div)',
+    card_new,
+    content,
+    flags=re.DOTALL
+)
+
+with open('src/pages/en/tools/[country].astro', 'w') as f:
+    f.write(content)
+

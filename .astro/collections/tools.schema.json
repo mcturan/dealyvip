@@ -28,6 +28,27 @@
             "INFORMATIONAL"
           ]
         },
+        "accessType": {
+          "type": "string",
+          "enum": [
+            "PUBLIC",
+            "PUBLIC_WITH_LIMITATIONS",
+            "REGISTRATION_REQUIRED",
+            "LOGIN_REQUIRED",
+            "INFORMATION_ONLY",
+            "EXTERNAL_PROFESSIONAL_REQUIRED"
+          ],
+          "default": "PUBLIC"
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [
+            "tr"
+          ]
+        },
         "url": {
           "type": "string"
         },
@@ -38,6 +59,12 @@
           }
         },
         "whatItCannotVerify": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "requiredInformation": {
           "type": "array",
           "items": {
             "type": "string"

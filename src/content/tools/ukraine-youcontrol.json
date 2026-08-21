@@ -1,19 +1,27 @@
 {
   "countryId": "ukraine",
   "name": "YouControl",
-  "shortDescription": "Comprehensive analytical system for deep due diligence and compliance checking.",
-  "category": "business-information",
-  "operator": "YouControl (Private Entity)",
+  "shortDescription": "Advanced compliance and risk analysis platform for Ukrainian companies.",
+  "category": "company-registry",
+  "operator": "YouControl",
   "officialStatus": "THIRD-PARTY",
+  "accessType": "REGISTRATION_REQUIRED",
+  "languages": [
+    "uk",
+    "en"
+  ],
   "url": "https://youcontrol.com.ua",
   "whatItCanVerify": [
-    "Sanctions compliance and risk factors",
-    "Complex ownership structures and beneficiary links",
-    "Historical financial indicators"
+    "Corporate structure",
+    "Sanctions screening",
+    "Financial analytics (historical)"
   ],
   "whatItCannotVerify": [
-    "Official government certification"
+    "Physical factory validation"
   ],
-  "accessLimitations": "Requires registration. Full dossiers require a commercial license.",
+  "requiredInformation": [
+    "EDRPOU Code"
+  ],
+  "accessLimitations": "Deep analytics require a paid subscription. Basic profiling requires free registration.",
   "lastVerified": "2024-05-20"
 }

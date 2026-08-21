@@ -1,19 +1,29 @@
 {
   "countryId": "ukraine",
   "name": "Opendatabot",
-  "shortDescription": "Leading Ukrainian platform aggregating state registry, tax, and court data.",
-  "category": "business-information",
-  "operator": "Opendatabot (Private Entity)",
+  "shortDescription": "Third-party open data aggregator for Ukrainian corporate data.",
+  "category": "company-registry",
+  "operator": "Opendatabot",
   "officialStatus": "THIRD-PARTY",
+  "accessType": "PUBLIC",
+  "languages": [
+    "uk",
+    "en"
+  ],
   "url": "https://opendatabot.ua",
   "whatItCanVerify": [
-    "Aggregated EDRPOU status",
-    "Historical court cases involving the company",
-    "Tax debt indicators"
+    "Basic corporate data",
+    "Tax status",
+    "Court register mentions"
   ],
   "whatItCannotVerify": [
-    "Official government certification"
+    "Real-time classified war-time data",
+    "Guaranteed corporate reliability"
   ],
-  "accessLimitations": "Accessible via web and messengers (Telegram, Viber). Advanced analytics require a paid subscription.",
+  "requiredInformation": [
+    "EDRPOU Code",
+    "Company Name"
+  ],
+  "accessLimitations": "Aggregates public data. Extremely useful when official USR is geo-blocked.",
   "lastVerified": "2024-05-20"
 }

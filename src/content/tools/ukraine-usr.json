@@ -1,20 +1,29 @@
 {
   "countryId": "ukraine",
-  "name": "Unified State Register (USR/EDR)",
-  "shortDescription": "The central government registry for legal entities and individual entrepreneurs.",
+  "name": "Unified State Register (USR)",
+  "shortDescription": "The official state register of legal entities in Ukraine.",
   "category": "company-registry",
   "operator": "Ministry of Justice of Ukraine",
   "officialStatus": "OFFICIAL",
+  "accessType": "PUBLIC_WITH_LIMITATIONS",
+  "languages": [
+    "uk"
+  ],
   "url": "https://usr.minjust.gov.ua",
   "whatItCanVerify": [
-    "Company existence via EDRPOU code",
-    "Registered legal address",
-    "Director and authorized signatories"
+    "Legal existence",
+    "EDRPOU Code",
+    "Authorized directors",
+    "Bankruptcy status"
   ],
   "whatItCannotVerify": [
-    "Wartime operational capacity",
-    "Physical safety of the registered address"
+    "Physical infrastructure damage",
+    "Current operational capacity",
+    "Debt"
   ],
-  "accessLimitations": "Subject to martial law restrictions. Access may fluctuate, require CAPTCHA, or mandate a Ukrainian electronic digital signature (KEP).",
+  "requiredInformation": [
+    "EDRPOU Code (8 digits)"
+  ],
+  "accessLimitations": "Geo-blocked from many international IP addresses due to martial law. Often requires local access or VPN.",
   "lastVerified": "2024-05-20"
 }

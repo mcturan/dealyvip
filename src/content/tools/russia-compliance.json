@@ -1,0 +1,16 @@
+{
+  "countryId": "russia",
+  "name": "Russia Trade & Compliance Orientation",
+  "shortDescription": "Navigating cross-border restrictions, sanctions screening, and compliance reality.",
+  "category": "compliance",
+  "operator": "DealyVIP",
+  "officialStatus": "INFORMATIONAL",
+  "accessType": "INFORMATION_ONLY",
+  "languages": ["en"],
+  "url": "/en/what-we-do/",
+  "whatItCanVerify": ["DealyVIP's operational boundaries regarding Russia"],
+  "whatItCannotVerify": ["Categorical legality of your specific trade", "Sanctions evasion techniques"],
+  "requiredInformation": [],
+  "accessLimitations": "Strictly an informational boundary statement. We do not provide automated EGRUL lookups.",
+  "lastVerified": "2024-05-20"
+}
