@@ -3,7 +3,7 @@
 ## Purpose
 A structured list of proposed questions/pages based on likely high-intent user searches.
 
-## TIER 1 — BETA LAUNCH
+## Initial Beta Content Candidates (Tier 1)
 
 ### Verification & Trust
 | ID | Question | Intent | Country | Audience | Pri. Lang | Other Langs | Content Type | Why it matters | Proposed Page |
@@ -13,7 +13,7 @@ A structured list of proposed questions/pages based on likely high-intent user s
 | T1-03 | What to check before sending money to an overseas supplier? | Risk reduction | General | Buyers / Importers | EN | TR, RU, UK | Practical Guide | High financial risk | Overseas Supplier Pre-Payment Checklist |
 | T1-04 | How can I verify a company in Ukraine? | Pre-transaction due diligence | Ukraine | Buyers / Investors | EN | UK | Question Guide | Risk mitigation | How to Verify a Company in Ukraine |
 | T1-05 | Are official registries reliable for supplier verification? | Understanding data sources | General | Buyers | EN | - | Problem Guide | Clarifies limits of registry data | Limits of Corporate Registry Verification |
-| T1-06 | How to verify Russian entities under current sanctions? | Compliance & verification | Russia | Int. Business | EN | RU | Problem Guide | Extreme compliance risk | Verifying Russian Entities (Sanctions Context) |
+| T1-06 | How to verify Russian entities safely? | Compliance & verification | Russia | Int. Business | EN | RU | Problem Guide | Extreme compliance risk | Verifying Russian Entities (Compliance Context) |
 
 ### Supplier Search & Matchmaking
 | ID | Question | Intent | Country | Audience | Pri. Lang | Other Langs | Content Type | Why it matters | Proposed Page |
@@ -21,7 +21,7 @@ A structured list of proposed questions/pages based on likely high-intent user s
 | T1-07 | How do I find a supplier in Türkiye? | Sourcing | Türkiye | Importers | EN | TR, RU, UK | Question Guide | High volume commercial query | Finding Reliable Suppliers in Türkiye |
 | T1-08 | What documents to request from a new supplier? | Process / Risk | General | Buyers | EN | - | Practical Guide | Standardizes due diligence | Essential Documents from New Suppliers |
 | T1-09 | How to find manufacturers in Ukraine safely? | Sourcing under constraint | Ukraine | Importers | EN | UK | Question Guide | Navigating martial law logistics | Sourcing from Ukraine Safely |
-| T1-10 | Can I find a supplier in Iran legally? | Sanctions compliance | Iran | Int. Business | EN | FA | Problem Guide | High legal risk | Sourcing from Iran (Sanctions Overview) |
+| T1-10 | Can I find a supplier in Iran legally? | Sanctions compliance | Iran | Int. Business | EN | FA | Problem Guide | High legal risk | Sourcing from Iran (Exemptions & Constraints) |
 
 ### Local Assistance & Travel
 | ID | Question | Intent | Country | Audience | Pri. Lang | Other Langs | Content Type | Why it matters | Proposed Page |
@@ -46,6 +46,9 @@ A structured list of proposed questions/pages based on likely high-intent user s
 | T1-24 | Banking process orientation for foreign businesses. | Financial basics | General | Investors | EN | - | Problem Guide | Major operational hurdle | Cross-Border Banking Orientation |
 | T1-25 | Common mistakes in cross-border business communication. | Cultural / Process | General | All | EN | - | Practical Guide | Value-add knowledge | Cross-Border Communication Mistakes |
 | T1-26 | How do I arrange shipping and customs from Türkiye? | Logistics | Türkiye | Importers | EN | TR, RU, UK | Problem Guide | Crucial operational hurdle | Turkish Export Logistics & Customs Basics |
+| T1-27 | Navigating compliance for business in Russia. | Compliance | Russia | Investors | EN | RU | Problem Guide | Navigating case-specific exemptions | Russia Business Compliance & Exemptions |
+
+*Note: Initial Beta Content Candidates (Tier 1) are a starting point. During production, candidates may be merged, split, replaced, reprioritized, or removed with documented reasoning.*
 
 ## TIER 2 — POST-LAUNCH
 | ID | Question | Intent | Country | Audience | Pri. Lang | Content Type | Why it matters |

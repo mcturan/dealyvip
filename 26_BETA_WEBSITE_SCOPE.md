@@ -5,7 +5,7 @@ Explicitly define what the DealyVIP beta website will and will not contain to pr
 
 ## What the Beta WILL Contain
 - A static-first informational architecture.
-- 25 to 40 high-intent Tier 1 content pages (Guides, Problem answers, Country orientations).
+- A set of Initial Beta Content Candidates (Guides, Problem answers, Country orientations) designed as a flexible starting point.
 - Clear, honest descriptions of potential local assistance capabilities (marked with availability limitations).
 - A simple contact method (e.g., mailto link or basic form) driving users to discuss their requirements.
 - AI-readable markdown/HTML structure.

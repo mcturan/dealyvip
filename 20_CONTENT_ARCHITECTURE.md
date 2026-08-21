@@ -1,7 +1,7 @@
 # Content Architecture
 
 ## Purpose
-Define the logical website structure for the beta launch.
+Define the logical website structure for the initial beta content candidates.
 
 ## Site Structure
 
@@ -11,19 +11,21 @@ Define the logical website structure for the beta launch.
 - **Countries (Country Guides)**
   - Türkiye (Doing Business, Setup, Visa)
   - Ukraine (Doing Business, Safety, Logistics)
-  - Russia (Trade Restrictions & Sanctions Overview)
-  - Iran (Trade Restrictions & Sanctions Overview)
+  - Russia (Trade Restrictions Overview, Business Compliance & Exemptions)
+  - Iran (Trade Restrictions Overview, Sourcing Exemptions & Constraints)
 
 - **Verification & Trust (Problem Guides)**
   - How to Verify a Company
   - Verifying Factory Physical Existence
   - Limits of Corporate Registry Verification
   - Pre-Payment Supplier Checklist
+  - Verifying Russian Entities (Compliance Context)
 
 - **Sourcing & Suppliers (Practical Guides)**
   - Finding Reliable Suppliers
   - Essential Documents from New Suppliers
   - Preparing for an Overseas Factory Visit
+  - Sourcing from Ukraine Safely
 
 - **Business Travel & Local Assistance**
   - Arranging Local Business Meetings

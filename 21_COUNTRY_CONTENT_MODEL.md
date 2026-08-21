@@ -20,20 +20,20 @@ Define the specific content strategy for each of the four target markets. Avoids
 - **Content Limitations:** Must explicitly warn against uncoordinated physical visits.
 
 ## 3. Russia
-- **Major User Questions:** What are the sanctions? Can I verify a Russian entity?
-- **Relevant Audiences:** International compliance officers, legacy business owners.
+- **Major User Questions:** What are the sanctions? Can I legally verify a Russian entity? How do I navigate local compliance?
+- **Relevant Audiences:** International compliance officers, legacy business owners, parties navigating exempted sectors.
 - **Useful Languages:** English, Russian.
-- **Recommended Priorities:** Sanctions overview, remote entity verification limits.
-- **Country-Specific Risks:** Severe OFAC/EU sanctions, banking blocks.
-- **Content Limitations:** Cannot offer any trade facilitation, matchmaking, or local assistance. Focus strictly on objective compliance/risk information.
+- **Recommended Priorities:** Sanctions overview, remote entity verification procedures, compliance orientation.
+- **Country-Specific Risks:** Severe OFAC/EU sanctions, banking blocks, jurisdictional complexity.
+- **Content Limitations:** Trade facilitation, matchmaking, and local assistance are subject to strict legal and compliance conditions depending on the parties and sector involved. Availability is case-specific and cannot be guaranteed. Do not provide legal advice.
 
 ## 4. Iran
-- **Major User Questions:** What are the sanctions? Can I legally source from Iran?
-- **Relevant Audiences:** International compliance officers.
+- **Major User Questions:** What are the sanctions? Can I legally source from Iran in exempted sectors?
+- **Relevant Audiences:** International compliance officers, businesses dealing in exempted goods.
 - **Useful Languages:** English, Persian.
-- **Recommended Priorities:** Sanctions overview.
+- **Recommended Priorities:** Sanctions overview, compliance orientation.
 - **Country-Specific Risks:** Severe OFAC/FATF sanctions.
-- **Content Limitations:** Same as Russia. Strictly informational regarding restrictions.
+- **Content Limitations:** Trade facilitation and assistance are highly restricted and depend heavily on the payment path, jurisdiction, and sector. Availability is case-specific. Do not provide legal advice.
 
 ## Status
 Confirmed.

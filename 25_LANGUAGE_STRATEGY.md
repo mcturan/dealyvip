@@ -4,17 +4,17 @@
 Define the approach to multilingual content for the beta website.
 
 ## Core Principles
-- **Base Architecture:** English is the primary structural and operational language. All pages must exist in English first.
-- **Localized Search Intent:** Translations should only exist where justified by audience behavior. 
+- **Architectural Base:** English is the primary architectural language for the project and a global business language.
+- **Controlled Content Versions:** Each language version must be maintained as a controlled content version. A Turkish, Ukrainian, or Russian page may be authored as an original primary page if justified by audience, country context, search intent, or legal nuances.
 - **Avoid Mass Translation:** Do not use automated tools to translate every page into every language. Poorly translated legal/business concepts create liability and destroy trust.
-- **Canonical Content:** The English version is always the canonical source of truth for policy and scope.
+- **Semantic Consistency:** The goal is semantic consistency where pages cover the same subject, rather than forced English supremacy. Another language version does not automatically become secondary merely because it is not English.
 
 ## Language Prioritization
-1. **English:** Universal business language. Used for all pages.
+1. **English:** Global business language. High priority.
 2. **Turkish:** For local suppliers, partners, and regional investors interacting with the Türkiye market.
 3. **Ukrainian:** For local partners and specific localized assistance queries.
-4. **Russian:** For regional business across Post-Soviet spaces and specific compliance/sanctions queries.
-5. **Persian (Farsi):** Limited to specific sanctions/compliance orientation for Iran.
+4. **Russian:** For regional business across Post-Soviet spaces, specific compliance queries, and native primary content.
+5. **Persian (Farsi):** Limited to specific sanctions/compliance orientation and relevant market contexts for Iran.
 
 ## Status
 Confirmed.

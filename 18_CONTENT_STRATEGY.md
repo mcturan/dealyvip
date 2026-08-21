@@ -19,7 +19,7 @@ The website operates on an **Information → Trust → Contact** model. The stra
 4. **Local Assistance Pages:** Descriptions of coordinated services, heavily bounded by realistic availability statements.
 
 ## Beta Priorities
-The beta launch will focus strictly on Tier 1 pages (approx. 25-40 high-value pages) that answer the most urgent trust and verification questions, primarily centered around Türkiye and Ukraine, with heavily caveated informational guides for Russia and Iran. Artificial country symmetry will be avoided.
+The beta launch will focus on Initial Beta Content Candidates that answer the most urgent trust and verification questions across all markets. While Türkiye and Ukraine will have more functional orientation pages, Russia and Iran will include case-specific compliance and exemption guidance, avoiding blanket prohibitions while maintaining strict regulatory awareness. Artificial country symmetry will be avoided.
 
 ## Content Lifecycle
 1. **Identify Intent:** Discover what questions users are asking.
