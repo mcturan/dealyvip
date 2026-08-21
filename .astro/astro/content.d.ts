@@ -148,9 +148,65 @@ declare module 'astro:content' {
   collection: "guides";
   data: InferEntrySchema<"guides">
 } & { render(): Render[".md"] };
+"en/coordinate-factory-supplier-visit.md": {
+	id: "en/coordinate-factory-supplier-visit.md";
+  slug: "en/coordinate-factory-supplier-visit";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"en/interpreter-international-business-meetings.md": {
+	id: "en/interpreter-international-business-meetings.md";
+  slug: "en/interpreter-international-business-meetings";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"en/overseas-supplier-red-flags.md": {
+	id: "en/overseas-supplier-red-flags.md";
+  slug: "en/overseas-supplier-red-flags";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"en/prepare-before-contacting-supplier.md": {
+	id: "en/prepare-before-contacting-supplier.md";
+  slug: "en/prepare-before-contacting-supplier";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"en/prepare-business-visit-supplier.md": {
+	id: "en/prepare-business-visit-supplier.md";
+  slug: "en/prepare-business-visit-supplier";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"en/public-records-limitations.md": {
+	id: "en/public-records-limitations.md";
+  slug: "en/public-records-limitations";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
 "en/supplier-factory-verification-turkiye.md": {
 	id: "en/supplier-factory-verification-turkiye.md";
   slug: "en/supplier-factory-verification-turkiye";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"en/verify-business-documents.md": {
+	id: "en/verify-business-documents.md";
+  slug: "en/verify-business-documents";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"en/verify-overseas-supplier-existence.md": {
+	id: "en/verify-overseas-supplier-existence.md";
+  slug: "en/verify-overseas-supplier-existence";
   body: string;
   collection: "guides";
   data: InferEntrySchema<"guides">
