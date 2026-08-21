@@ -153,7 +153,51 @@ declare module 'astro:content' {
 	};
 
 	type DataEntryMap = {
-		
+		"countries": {
+"turkiye": {
+	id: "turkiye";
+  collection: "countries";
+  data: InferEntrySchema<"countries">
+};
+"ukraine": {
+	id: "ukraine";
+  collection: "countries";
+  data: InferEntrySchema<"countries">
+};
+};
+"tools": {
+"turkiye-ivd": {
+	id: "turkiye-ivd";
+  collection: "tools";
+  data: InferEntrySchema<"tools">
+};
+"turkiye-mersis": {
+	id: "turkiye-mersis";
+  collection: "tools";
+  data: InferEntrySchema<"tools">
+};
+"turkiye-ticaret-sicil": {
+	id: "turkiye-ticaret-sicil";
+  collection: "tools";
+  data: InferEntrySchema<"tools">
+};
+"ukraine-opendatabot": {
+	id: "ukraine-opendatabot";
+  collection: "tools";
+  data: InferEntrySchema<"tools">
+};
+"ukraine-usr": {
+	id: "ukraine-usr";
+  collection: "tools";
+  data: InferEntrySchema<"tools">
+};
+"ukraine-youcontrol": {
+	id: "ukraine-youcontrol";
+  collection: "tools";
+  data: InferEntrySchema<"tools">
+};
+};
+
 	};
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;

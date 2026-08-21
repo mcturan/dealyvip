@@ -15,6 +15,34 @@ const guidesCollection = defineCollection({
   }),
 });
 
+const countriesCollection = defineCollection({
+  type: 'data',
+  schema: z.object({
+    id: z.string(),
+    name: z.string(),
+    description: z.string(),
+  }),
+});
+
+const toolsCollection = defineCollection({
+  type: 'data',
+  schema: z.object({
+    countryId: z.string(),
+    name: z.string(),
+    shortDescription: z.string(),
+    category: z.string(),
+    operator: z.string(),
+    officialStatus: z.enum(['OFFICIAL', 'INSTITUTIONAL', 'THIRD-PARTY', 'INFORMATIONAL']),
+    url: z.string(),
+    whatItCanVerify: z.array(z.string()),
+    whatItCannotVerify: z.array(z.string()),
+    accessLimitations: z.string().optional(),
+    lastVerified: z.string(),
+  }),
+});
+
 export const collections = {
   'guides': guidesCollection,
+  'countries': countriesCollection,
+  'tools': toolsCollection,
 };

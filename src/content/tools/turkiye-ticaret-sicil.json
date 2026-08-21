@@ -1,0 +1,20 @@
+{
+  "countryId": "turkiye",
+  "name": "Turkish Trade Registry Gazette",
+  "shortDescription": "Official gazette publishing mandatory corporate announcements.",
+  "category": "company-registry",
+  "operator": "Union of Chambers and Commodity Exchanges of Türkiye (TOBB)",
+  "officialStatus": "OFFICIAL",
+  "url": "https://www.ticaretsicil.gov.tr",
+  "whatItCanVerify": [
+    "Board of directors appointments",
+    "Capital structure changes",
+    "Official headquarters address changes"
+  ],
+  "whatItCannotVerify": [
+    "Current operational capacity",
+    "Export history"
+  ],
+  "accessLimitations": "Requires free registration to view full gazette PDFs.",
+  "lastVerified": "2024-05-20"
+}

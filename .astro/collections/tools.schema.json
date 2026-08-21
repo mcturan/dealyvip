@@ -1,0 +1,72 @@
+{
+  "$ref": "#/definitions/tools",
+  "definitions": {
+    "tools": {
+      "type": "object",
+      "properties": {
+        "countryId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "shortDescription": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "operator": {
+          "type": "string"
+        },
+        "officialStatus": {
+          "type": "string",
+          "enum": [
+            "OFFICIAL",
+            "INSTITUTIONAL",
+            "THIRD-PARTY",
+            "INFORMATIONAL"
+          ]
+        },
+        "url": {
+          "type": "string"
+        },
+        "whatItCanVerify": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "whatItCannotVerify": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "accessLimitations": {
+          "type": "string"
+        },
+        "lastVerified": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "countryId",
+        "name",
+        "shortDescription",
+        "category",
+        "operator",
+        "officialStatus",
+        "url",
+        "whatItCanVerify",
+        "whatItCannotVerify",
+        "lastVerified"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

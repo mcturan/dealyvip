@@ -1,0 +1,19 @@
+{
+  "countryId": "ukraine",
+  "name": "Opendatabot",
+  "shortDescription": "Leading Ukrainian platform aggregating state registry, tax, and court data.",
+  "category": "business-information",
+  "operator": "Opendatabot (Private Entity)",
+  "officialStatus": "THIRD-PARTY",
+  "url": "https://opendatabot.ua",
+  "whatItCanVerify": [
+    "Aggregated EDRPOU status",
+    "Historical court cases involving the company",
+    "Tax debt indicators"
+  ],
+  "whatItCannotVerify": [
+    "Official government certification"
+  ],
+  "accessLimitations": "Accessible via web and messengers (Telegram, Viber). Advanced analytics require a paid subscription.",
+  "lastVerified": "2024-05-20"
+}

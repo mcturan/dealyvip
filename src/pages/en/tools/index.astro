@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const countries = await getCollection('countries');
+---
+<BaseLayout 
+  title="Verification Tools" 
+  description="Discover verified official and institutional business verification resources for DealyVIP supported countries." 
+  lang="en"
+>
+  <div class="container" style="padding-top: var(--space-xl); padding-bottom: var(--space-xl);">
+    <h1 class="display-title" style="margin-bottom: var(--space-sm);">Verification Tools</h1>
+    <p class="lead text-muted" style="max-width: 800px; margin-bottom: var(--space-lg);">
+      Select a country to access carefully curated, verified resources for business due diligence, registry checks, and compliance tracking. We distinguish strictly between official state registries and reputable third-party analytics.
+    </p>
+
+    <div class="grid grid-cols-3">
+      {countries.map(country => (
+        <a href={`/en/tools/${country.id}/`} class="card no-underline" style="display: block; transition: border-color 0.2s;">
+          <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--color-primary);">{country.data.name}</h2>
+          <p class="text-muted" style="font-size: 0.95rem;">{country.data.description}</p>
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>
+<style>
+  .card:hover {
+    border-color: var(--color-primary);
+  }
+</style>
