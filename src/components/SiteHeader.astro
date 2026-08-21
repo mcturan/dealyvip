@@ -8,7 +8,11 @@ const { lang = 'en' } = Astro.props;
   <div style="max-width: var(--max-width); margin: 0 auto; padding: 0 1rem; display: flex; justify-content: space-between; align-items: center;">
     <a href={`/${lang}/`} style="font-size: 1.5rem; font-weight: bold; color: var(--color-text); text-decoration: none;">DealyVIP</a>
     
-    <nav style="display: flex; gap: 1.5rem; align-items: center;" class="desktop-nav">
+    <button id="mobile-menu-toggle" aria-label="Toggle Navigation" aria-expanded="false" style="display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer;">
+      ☰
+    </button>
+    
+    <nav id="site-navigation" style="display: flex; gap: 1.5rem; align-items: center;">
       <a href={`/${lang}/countries/`}>Countries</a>
       <a href={`/${lang}/guides/`}>Guides</a>
       <a href={`/${lang}/assistance/`}>Local Assistance</a>
@@ -19,6 +23,34 @@ const { lang = 'en' } = Astro.props;
 </header>
 <style>
 @media (max-width: 768px) {
-  .desktop-nav { display: none !important; }
+  #mobile-menu-toggle { display: block !important; }
+  #site-navigation {
+    display: none !important;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    padding: 1rem;
+    z-index: 50;
+  }
+  #site-navigation.is-active {
+    display: flex !important;
+  }
+  header { position: relative; }
 }
 </style>
+<script>
+  const toggle = document.getElementById('mobile-menu-toggle');
+  const nav = document.getElementById('site-navigation');
+  
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!isExpanded));
+      nav.classList.toggle('is-active');
+    });
+  }
+</script>

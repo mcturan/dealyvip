@@ -1,3 +1,21 @@
 ---
-return Astro.redirect('/en/');
+import MetaHead from '../components/MetaHead.astro';
+import '../styles/global.css';
 ---
+<html lang="en">
+  <head>
+    <MetaHead title="Welcome | Select Language" description="Select your preferred language for DealyVIP." />
+  </head>
+  <body style="display: flex; justify-content: center; align-items: center; min-height: 100vh; background: var(--color-bg);">
+    <div class="card text-center" style="max-width: 400px; width: 100%;">
+      <h1 style="font-size: 2rem; margin-bottom: 2rem;">DealyVIP</h1>
+      <p style="margin-bottom: 1.5rem; color: #555;">Please select your language:</p>
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <a href="/en/" class="btn">English</a>
+        <a href="/tr/" class="btn">Türkçe</a>
+        <a href="/uk/" class="btn">Українська</a>
+        <a href="/ru/" class="btn">Русский</a>
+      </div>
+    </div>
+  </body>
+</html>

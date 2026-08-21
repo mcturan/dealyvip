@@ -1,21 +1,24 @@
 ---
+interface AlternateLink {
+  code: string;
+  name: string;
+  url: string;
+}
+
 interface Props {
   currentLang?: string;
+  alternatives?: AlternateLink[];
 }
-const { currentLang = 'en' } = Astro.props;
+const { currentLang = 'en', alternatives = [] } = Astro.props;
 
-// Mock list. In production, this checks route availability.
-const langs = [
-  { code: 'en', name: 'English' },
-  { code: 'tr', name: 'Türkçe' },
-  { code: 'uk', name: 'Українська' },
-  { code: 'ru', name: 'Русский' }
-];
+// We only render language links if they are explicitly passed as known alternatives.
 ---
-<div class="lang-switcher" style="padding: 0.5rem; background: var(--color-secondary); display: flex; justify-content: flex-end; gap: 1rem;">
-  {langs.map(lang => (
-    <a href={`/${lang.code}/`} style={{ fontWeight: currentLang === lang.code ? 'bold' : 'normal' }}>
-      {lang.name}
-    </a>
-  ))}
-</div>
+{alternatives.length > 0 && (
+  <div class="lang-switcher" style="padding: 0.5rem; background: var(--color-secondary); display: flex; justify-content: flex-end; gap: 1rem;">
+    {alternatives.map(lang => (
+      <a href={lang.url} style={{ fontWeight: currentLang === lang.code ? 'bold' : 'normal' }}>
+        {lang.name}
+      </a>
+    ))}
+  </div>
+)}

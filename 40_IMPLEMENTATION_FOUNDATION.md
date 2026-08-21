@@ -43,7 +43,7 @@ Documents the successful initialization of the DealyVIP Astro beta website struc
 - One structural placeholder guide created at `src/content/guides/en/pre-payment-checklist.md`.
 
 ## Known Limitations
-- The language switcher is currently a mocked list. It must eventually check active route availability dynamically to avoid generating 404s.
+- The language switcher relies on explicit prop injection for available routes.
 - The `SiteHeader` desktop navigation requires refinement on mobile viewports.
 - The Contact page contains no functional submission backend yet (no form endpoints configured).
 

@@ -5,20 +5,27 @@ import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 
+interface AlternateLink {
+  code: string;
+  name: string;
+  url: string;
+}
+
 interface Props {
   title: string;
   description: string;
   lang?: string;
+  alternatives?: AlternateLink[];
 }
 
-const { title, description, lang = 'en' } = Astro.props;
+const { title, description, lang = 'en', alternatives = [] } = Astro.props;
 ---
 <html lang={lang}>
   <head>
     <MetaHead title={title} description={description} lang={lang} />
   </head>
   <body>
-    <LanguageSwitcher currentLang={lang} />
+    <LanguageSwitcher currentLang={lang} alternatives={alternatives} />
     <SiteHeader lang={lang} />
     <main>
       <slot />

@@ -3,12 +3,19 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import CTASection from '../../components/CTASection.astro';
 import CountryCard from '../../components/CountryCard.astro';
 import GuideCard from '../../components/GuideCard.astro';
+
+const alternatives = [
+  { code: 'en', name: 'English', url: '/en/' },
+  { code: 'tr', name: 'Türkçe', url: '/tr/' },
+  { code: 'uk', name: 'Українська', url: '/uk/' },
+  { code: 'ru', name: 'Русский', url: '/ru/' }
+];
 ---
-<BaseLayout title="Home" description="Independent verification, supplier discovery, and local assistance in Türkiye, Ukraine, Russia, and Iran." lang="en">
+<BaseLayout title="Home" description="Independent verification, supplier discovery, and local assistance in Türkiye, Ukraine, Russia, and Iran." lang="en" alternatives={alternatives}>
   <section class="text-center mb-2" style="padding: 4rem 1rem;">
     <h1 style="font-size: 2.5rem;">Navigate Cross-Border Business with Confidence</h1>
     <p style="font-size: 1.25rem; color: #555; max-width: 800px; margin: 0 auto 2rem;">Independent verification, supplier discovery, and local assistance in Türkiye, Ukraine, Russia, and Iran.</p>
-    <div style="display: flex; gap: 1rem; justify-content: center;">
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
       <a href="/en/assistance/" class="btn">Find Local Assistance</a>
       <a href="/en/guides/" class="btn" style="background: white; color: var(--color-primary); border: 2px solid var(--color-primary);">Read Business Guides</a>
     </div>

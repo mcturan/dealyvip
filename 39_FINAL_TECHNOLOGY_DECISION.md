@@ -47,7 +47,7 @@ Content items covering the same topic will use explicit frontmatter tags (e.g., 
 
 ## 6. Language Routing Strategy
 - **Base Architecture:** Subdirectory routing (`/en/`, `/tr/`, `/uk/`, `/ru/`).
-- **Controlled Multilingualism:** Pages may exist independently in one language. If a user is on a Turkish page and switches to English, they should be routed to the English semantic equivalent if it exists, or the `/en/` home if it does not.
+- **Controlled Multilingualism:** Pages may exist independently in one language. If a page exists in a language, serve that page. If a page does not exist in that language, do not silently redirect or automatically render another language version. Alternative language versions may be shown through explicit language links where they exist.
 
 ## 7. Component Philosophy
 - Keep components structural and semantic.
