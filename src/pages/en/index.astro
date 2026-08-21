@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTASection from '../../components/CTASection.astro';
+import CountryCard from '../../components/CountryCard.astro';
+import GuideCard from '../../components/GuideCard.astro';
+---
+<BaseLayout title="Home" description="Independent verification, supplier discovery, and local assistance in Türkiye, Ukraine, Russia, and Iran." lang="en">
+  <section class="text-center mb-2" style="padding: 4rem 1rem;">
+    <h1 style="font-size: 2.5rem;">Navigate Cross-Border Business with Confidence</h1>
+    <p style="font-size: 1.25rem; color: #555; max-width: 800px; margin: 0 auto 2rem;">Independent verification, supplier discovery, and local assistance in Türkiye, Ukraine, Russia, and Iran.</p>
+    <div style="display: flex; gap: 1rem; justify-content: center;">
+      <a href="/en/assistance/" class="btn">Find Local Assistance</a>
+      <a href="/en/guides/" class="btn" style="background: white; color: var(--color-primary); border: 2px solid var(--color-primary);">Read Business Guides</a>
+    </div>
+  </section>
+
+  <section class="mb-2">
+    <h2>Explore by Country</h2>
+    <div class="grid grid-cols-4">
+      <CountryCard name="Türkiye" description="Market Entry, Suppliers, Logistics" url="/en/turkiye/" />
+      <CountryCard name="Ukraine" description="Operations under constraint" url="/en/ukraine/" />
+      <CountryCard name="Russia" description="Compliance & Exemptions" url="/en/russia/" />
+      <CountryCard name="Iran" description="Trade Restrictions" url="/en/iran/" />
+    </div>
+  </section>
+
+  <section class="mb-2">
+    <h2>Featured Guides</h2>
+    <div class="grid grid-cols-2">
+      <GuideCard title="Pre-Payment Supplier Checklist" category="Verification & Trust" url="/en/guides/verification/pre-payment-checklist/" />
+      <GuideCard title="Finding Reliable Suppliers in Türkiye" category="Sourcing" url="/en/guides/sourcing/turkiye-suppliers/" />
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>

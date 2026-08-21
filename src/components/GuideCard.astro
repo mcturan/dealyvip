@@ -1,0 +1,12 @@
+---
+interface Props {
+  title: string;
+  category: string;
+  url: string;
+}
+const { title, category, url } = Astro.props;
+---
+<a href={url} class="card" style="display: block; text-decoration: none; color: inherit;">
+  <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--color-primary); font-weight: bold;">{category}</span>
+  <h3 style="margin-top: 0.5rem; font-size: 1.1rem;">{title}</h3>
+</a>

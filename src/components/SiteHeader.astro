@@ -1,0 +1,24 @@
+---
+interface Props {
+  lang?: string;
+}
+const { lang = 'en' } = Astro.props;
+---
+<header style="border-bottom: 1px solid var(--color-border); padding: 1rem 0;">
+  <div style="max-width: var(--max-width); margin: 0 auto; padding: 0 1rem; display: flex; justify-content: space-between; align-items: center;">
+    <a href={`/${lang}/`} style="font-size: 1.5rem; font-weight: bold; color: var(--color-text); text-decoration: none;">DealyVIP</a>
+    
+    <nav style="display: flex; gap: 1.5rem; align-items: center;" class="desktop-nav">
+      <a href={`/${lang}/countries/`}>Countries</a>
+      <a href={`/${lang}/guides/`}>Guides</a>
+      <a href={`/${lang}/assistance/`}>Local Assistance</a>
+      <a href={`/${lang}/about/`}>About Us</a>
+      <a href={`/${lang}/contact/`} class="btn" style="padding: 0.5rem 1rem;">Contact</a>
+    </nav>
+  </div>
+</header>
+<style>
+@media (max-width: 768px) {
+  .desktop-nav { display: none !important; }
+}
+</style>

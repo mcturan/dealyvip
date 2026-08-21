@@ -1,0 +1,21 @@
+---
+interface Props {
+  currentLang?: string;
+}
+const { currentLang = 'en' } = Astro.props;
+
+// Mock list. In production, this checks route availability.
+const langs = [
+  { code: 'en', name: 'English' },
+  { code: 'tr', name: 'Türkçe' },
+  { code: 'uk', name: 'Українська' },
+  { code: 'ru', name: 'Русский' }
+];
+---
+<div class="lang-switcher" style="padding: 0.5rem; background: var(--color-secondary); display: flex; justify-content: flex-end; gap: 1rem;">
+  {langs.map(lang => (
+    <a href={`/${lang.code}/`} style={{ fontWeight: currentLang === lang.code ? 'bold' : 'normal' }}>
+      {lang.name}
+    </a>
+  ))}
+</div>
