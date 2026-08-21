@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ContactCTA from '../../../components/ContactCTA.astro';
 
 export async function getStaticPaths() {
   const guides = await getCollection('guides', ({ id }) => id.startsWith('en/'));
@@ -15,6 +16,8 @@ export async function getStaticPaths() {
 
 const { guide } = Astro.props;
 const { Content } = await guide.render();
+const ctaContext = guide.data.topic === 'Verification & Trust' ? 'verification' : 
+                   guide.data.topic === 'Local Assistance & Travel' ? 'assistance' : 'general';
 
 // Fetch related tools if they exist
 const allTools = await getCollection('tools');
@@ -57,6 +60,8 @@ const getStatusColor = (status: string) => {
       <div class="prose" style="line-height: 1.7; font-size: 1.05rem; color: var(--color-text);">
         <Content />
       </div>
+      
+      <ContactCTA context={ctaContext} />
       
       {relatedGuides.length > 0 && (
         <div style="margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--color-border);">

@@ -1,14 +1,64 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { contactConfig } from '../../config/contact';
 ---
-<BaseLayout title="Contact" description="Contact DealyVIP for local assistance" lang="en">
-  <h1>Contact DealyVIP</h1>
-  <p>Please prepare the following information before contacting us:</p>
-  <ul>
-    <li>Country of Interest</li>
-    <li>Primary Objective</li>
-    <li>Specific Location</li>
-    <li>Timeline</li>
-  </ul>
-  <p><em>(Structural placeholder for contact information)</em></p>
+<BaseLayout title="Contact & Coordination" description="Request local assistance and coordination from DealyVIP." lang="en">
+  <div class="container section" style="max-width: 800px; padding-top: var(--space-xl); padding-bottom: var(--space-xl);">
+    
+    <h1 class="display-title" style="margin-bottom: var(--space-md);">Contact & Coordination</h1>
+    <p class="lead text-muted" style="margin-bottom: var(--space-xl); padding-bottom: var(--space-md); border-bottom: 1px solid var(--color-border);">
+      Before reaching out for local coordination or specific assistance, please review our operational boundaries and prepare the necessary information.
+    </p>
+
+    <div class="grid" style="grid-template-columns: 1fr 1fr; gap: var(--space-lg); margin-bottom: var(--space-xl);">
+      <div style="background: #f8fafc; padding: var(--space-lg); border-radius: 8px; border: 1px solid #e2e8f0;">
+        <h2 style="font-size: 1.25rem; margin-bottom: var(--space-sm); color: var(--color-slate-900);">What to Prepare</h2>
+        <ul style="padding-left: 1.25rem; margin-bottom: 0; line-height: 1.6; font-size: 0.95rem; color: var(--color-text);">
+          <li style="margin-bottom: 0.5rem;"><strong>Business Context:</strong> What exactly are you trying to achieve?</li>
+          <li style="margin-bottom: 0.5rem;"><strong>Jurisdiction:</strong> Which countries are involved?</li>
+          <li style="margin-bottom: 0.5rem;"><strong>Entity Details:</strong> Company name, registration number, or website (if known).</li>
+          <li style="margin-bottom: 0.5rem;"><strong>The Problem:</strong> What specific obstacle do you need help overcoming?</li>
+        </ul>
+      </div>
+
+      <div style="background: #fff1f2; padding: var(--space-lg); border-radius: 8px; border: 1px solid #ffe4e6;">
+        <h2 style="font-size: 1.25rem; margin-bottom: var(--space-sm); color: #be123c;">Important Notice</h2>
+        <p style="font-size: 0.95rem; margin-bottom: 0.75rem; color: #9f1239;">
+          Do not send sensitive personal data, unredacted financial information, or bank passwords through initial communication channels.
+        </p>
+        <p style="font-size: 0.95rem; margin-bottom: 0; color: #9f1239;">
+          Review <a href="/en/what-we-do/" style="color: #be123c; text-decoration: underline;">What We Do</a> to ensure your request aligns with our capabilities. We do not provide legal or financial validation.
+        </p>
+      </div>
+    </div>
+
+    <h2 style="font-size: 1.5rem; margin-bottom: var(--space-md);">Communication Channels</h2>
+    
+    {contactConfig.publicContactEnabled ? (
+      <div style="display: flex; flex-direction: column; gap: var(--space-md);">
+        {contactConfig.email && (
+          <a href={`mailto:${contactConfig.email}`} class="button" style="display: inline-block; padding: 0.75rem 1.5rem; background: var(--color-primary); color: white; border-radius: 4px; text-decoration: none; text-align: center; font-weight: 600;">
+            Send an Email
+          </a>
+        )}
+        
+        {contactConfig.whatsapp && (
+          <a href={`https://wa.me/${contactConfig.whatsapp}`} target="_blank" rel="noopener noreferrer" class="button" style="display: inline-block; padding: 0.75rem 1.5rem; background: #16a34a; color: white; border-radius: 4px; text-decoration: none; text-align: center; font-weight: 600;">
+            Contact via WhatsApp
+          </a>
+        )}
+
+        {!contactConfig.email && !contactConfig.whatsapp && !contactConfig.messagingLink && (
+          <div style="padding: var(--space-md); border: 1px dashed var(--color-border); border-radius: 4px; text-align: center; color: var(--color-text-muted);">
+            <p style="margin: 0;">Public contact channels are temporarily paused while we process existing coordination requests.</p>
+          </div>
+        )}
+      </div>
+    ) : (
+      <div style="padding: var(--space-lg); border: 1px solid var(--color-border); border-radius: 8px; background: var(--color-bg-alt); text-align: center;">
+        <p style="margin: 0; color: var(--color-text-muted);">Direct contact channels are currently closed for new requests. Please utilize our published verification guides and tools.</p>
+      </div>
+    )}
+
+  </div>
 </BaseLayout>

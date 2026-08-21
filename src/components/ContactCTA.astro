@@ -1,0 +1,35 @@
+---
+export interface Props {
+  context?: 'verification' | 'assistance' | 'general';
+}
+
+const { context = 'general' } = Astro.props;
+
+let message = "The next step may be further research rather than contacting DealyVIP. Explore our guides to understand the public tools available to you.";
+let buttonText = "Prepare Your Information";
+let showContactBtn = true;
+
+if (context === 'verification') {
+  message = "If public information does not answer the practical question, local or professional assistance may sometimes be necessary. We coordinate independent professionals for observation visits.";
+  buttonText = "Explore Coordination Options";
+} else if (context === 'assistance') {
+  message = "If an observation visit or local coordination is relevant to your needs, review the available contact options.";
+  buttonText = "Coordinate Local Assistance";
+}
+---
+<div style="background: var(--color-slate-50); border: 1px solid var(--color-border); border-radius: 8px; padding: var(--space-lg); margin-top: var(--space-xl); margin-bottom: var(--space-xl);">
+  <h3 style="margin-top: 0; margin-bottom: var(--space-sm); font-size: 1.25rem;">Need More Help?</h3>
+  <p style="margin-bottom: var(--space-md); color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.5;">
+    {message}
+  </p>
+  <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+    <a href="/en/what-we-do/" class="no-underline" style="display: inline-block; padding: 0.5rem 1rem; border: 1px solid var(--color-border); border-radius: 4px; background: white; color: var(--color-text); font-weight: 500; font-size: 0.9rem;">
+      Understand Limitations
+    </a>
+    {showContactBtn && (
+      <a href="/en/contact/" class="no-underline" style="display: inline-block; padding: 0.5rem 1rem; background: var(--color-primary); color: white; border-radius: 4px; font-weight: 500; font-size: 0.9rem;">
+        {buttonText}
+      </a>
+    )}
+  </div>
+</div>
