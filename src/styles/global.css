@@ -218,3 +218,24 @@ a.no-underline {
 @media (max-width: 768px) {
   .section { padding: var(--space-md) 0; }
 }
+
+/* Prevent horizontal overflow on mobile */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+pre, code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+a {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Ensure body doesn't overflow */
+body {
+  overflow-x: hidden;
+}

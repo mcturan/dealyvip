@@ -14,11 +14,11 @@ const { currentLang = 'en', alternatives = [] } = Astro.props;
 // We only render language links if they are explicitly passed as known alternatives.
 ---
 {alternatives.length > 0 && (
-  <div class="lang-switcher" style="padding: 0.5rem; background: var(--color-secondary); display: flex; justify-content: flex-end; gap: 1rem;">
+  <nav aria-label="Language selection" class="lang-switcher" style="padding: 0.5rem var(--space-md); background: var(--color-bg-alt); border-bottom: 1px solid var(--color-border); display: flex; justify-content: flex-end; gap: 1rem;">
     {alternatives.map(lang => (
-      <a href={lang.url} style={{ fontWeight: currentLang === lang.code ? 'bold' : 'normal' }}>
+      <a href={lang.url} hreflang={lang.code} style={{ fontWeight: currentLang === lang.code ? 'bold' : 'normal' }}>
         {lang.name}
       </a>
     ))}
-  </div>
+  </nav>
 )}

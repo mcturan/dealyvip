@@ -41,7 +41,7 @@ const ogImage = siteUrl ? `${siteUrl}${image}` : image;
   <link rel="alternate" hreflang={alt.code} href={`${siteUrl}${alt.url}`} />
 ))}
 {siteUrl && (
-  <script type="application/ld+json" set:html={JSON.stringify({
+  <script type="application/ld+json" is:inline set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "DealyVIP",
