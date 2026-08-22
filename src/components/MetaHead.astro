@@ -15,11 +15,10 @@ interface Props {
 
 const { title, description, canonical, alternatives = [], image = '/og-default.jpg' } = Astro.props;
 
-// Safe fallback for local dev, but strictly avoid localhost leaks in production
-const isDev = import.meta.env.DEV;
+// Safe fallback for local dev. Strictly avoids localhost leaks in production builds without SITE_URL.
 const siteUrl = Astro.site 
   ? Astro.site.toString().replace(/\/$/, '') 
-  : (isDev ? 'http://localhost:3000' : '');
+  : ''; // If no SITE_URL is provided to the build, fallback is completely empty.
 
 const canonicalUrl = canonical || (siteUrl ? `${siteUrl}${Astro.url.pathname}` : '');
 const ogImage = siteUrl ? `${siteUrl}${image}` : image;

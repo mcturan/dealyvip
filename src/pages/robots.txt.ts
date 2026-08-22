@@ -1,15 +1,12 @@
 import type { APIRoute } from 'astro';
 
-const getRobotsTxt = (sitemapURL: URL) => `
-User-agent: *
-Allow: /
-
-Sitemap: ${sitemapURL.href}
-`;
-
 export const GET: APIRoute = ({ site }) => {
-  const sitemapURL = new URL('sitemap-index.xml', site || 'https://dealyvip.com');
-  return new Response(getRobotsTxt(sitemapURL), {
+  let robotsTxt = `User-agent: *\nAllow: /\n`;
+  if (site) {
+    const sitemapURL = new URL('sitemap-index.xml', site);
+    robotsTxt += `\nSitemap: ${sitemapURL.href}\n`;
+  }
+  return new Response(robotsTxt.trim(), {
     headers: {
       'Content-Type': 'text/plain',
     },

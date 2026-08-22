@@ -4,42 +4,35 @@ interface Props {
 }
 const { lang = 'en' } = Astro.props;
 ---
-<footer style="background-color: var(--color-slate-50); border-top: 1px solid var(--color-border); padding: var(--space-lg) 0 var(--space-md) 0; margin-top: auto;">
-  <div class="container grid grid-cols-4" style="margin-bottom: var(--space-lg);">
+<footer style="background: var(--color-slate-900); color: var(--color-slate-400); padding: var(--space-xl) var(--space-md); margin-top: var(--space-xxl);">
+  <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-xl);">
+    
     <div>
-      <h3 style="font-size: 1.2rem; margin-bottom: var(--space-sm);">DealyVIP</h3>
-      <p class="text-muted" style="font-size: 0.9rem; margin-bottom: var(--space-sm);">Independent verification and local assistance in restricted and emerging markets.</p>
+      <h3 style="color: var(--color-slate-50); margin-bottom: var(--space-md);">DealyVIP</h3>
+      <p style="font-size: 0.9rem;">Cross-border business coordination and verification.</p>
     </div>
-    
-    
-      
-        <div>
-          <h4 style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-slate-600); margin-bottom: var(--space-sm);">Services</h4>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
-            <li><a href="/en/tools/" class="no-underline text-muted">Verification Tools</a></li>
-            <li><a href="/en/assistance/" class="no-underline text-muted">Local Assistance</a></li>
-            <li><a href="/en/guides/" class="no-underline text-muted">Business Guides</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-slate-600); margin-bottom: var(--space-sm);">Locations</h4>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
-            <li><a href="/en/countries/" class="no-underline text-muted">All Countries</a></li>
-            <!-- Note: Linking directly to individual countries is disabled until those pages exist -->
-          </ul>
-        </div>
-        <div>
-          <h4 style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-slate-600); margin-bottom: var(--space-sm);">Legal & Trust</h4>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
-            <li><a href="/en/what-we-do/" class="no-underline text-muted">What We Do</a></li>
-            <li><a href="/en/contact/" class="no-underline text-muted">Contact</a></li>
-            <li><a href="/en/privacy/" class="no-underline text-muted">Privacy Policy</a></li>
-          </ul>
-        </div>
-      
-    
+
+    <div>
+      <h3 style="color: var(--color-slate-50); margin-bottom: var(--space-md);">Navigation</h3>
+      <nav style="display: flex; flex-direction: column; gap: var(--space-sm);">
+        <a href={`/${lang}/`} style="color: inherit; text-decoration: none;">Home</a>
+        <a href={`/${lang}/tools/`} style="color: inherit; text-decoration: none;">Tools</a>
+        <a href={`/${lang}/countries/`} style="color: inherit; text-decoration: none;">Countries</a>
+        <a href={`/${lang}/guides/`} style="color: inherit; text-decoration: none;">Guides</a>
+        <a href={`/${lang}/assistance/`} style="color: inherit; text-decoration: none;">Assistance</a>
+      </nav>
+    </div>
+
+    <div>
+      <h3 style="color: var(--color-slate-50); margin-bottom: var(--space-md);">Legal</h3>
+      <nav style="display: flex; flex-direction: column; gap: var(--space-sm);">
+        <a href={`/${lang}/privacy/`} style="color: inherit; text-decoration: none;">Privacy Policy</a>
+      </nav>
+    </div>
+
   </div>
-  <div class="container" style="text-align: center; color: var(--color-slate-600); font-size: 0.85rem; padding-top: var(--space-md); border-top: 1px solid var(--color-border);">
-    &copy; {new Date().getFullYear( DealyVIP. All rights reserved.
+  
+  <div style="max-width: 1200px; margin: var(--space-xl) auto 0; padding-top: var(--space-md); border-top: 1px solid var(--color-slate-800); text-align: center; font-size: 0.8rem;">
+    &copy; {new Date().getFullYear()} DealyVIP. All rights reserved.
   </div>
 </footer>
