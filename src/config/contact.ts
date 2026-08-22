@@ -12,7 +12,7 @@ export const contactConfig = {
   publicContactEnabled: true,
   
   // Direct email address. Leave as empty string to hide.
-  email: "",
+  email: "support@dealyvip.com",
   
   // WhatsApp number (include country code, no +, no spaces, e.g., 905551234567). Leave as empty string to hide.
   whatsapp: "",

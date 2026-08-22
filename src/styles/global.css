@@ -205,9 +205,9 @@ a.no-underline {
 .mt-4 { margin-top: var(--space-lg); }
 
 .grid { display: grid; gap: var(--space-md); }
-.grid-cols-2 { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
-.grid-cols-3 { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
-.grid-cols-4 { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.grid-cols-2 { grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); }
+.grid-cols-3 { grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); }
+.grid-cols-4 { grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); }
 
 /* Accessibility */
 :focus-visible {
