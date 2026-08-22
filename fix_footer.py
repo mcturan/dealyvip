@@ -1,12 +1,18 @@
 import re
 
-with open('src/components/SiteFooter.astro', 'r') as f:
+with open("src/components/SiteFooter.astro", "r") as f:
     content = f.read()
 
-pattern = r'<a href="/en/about/" class="no-underline text-muted">About Us</a>'
-replacement = r'<a href="/en/what-we-do/" class="no-underline text-muted">What We Do</a>'
+# Replace the specific nav strings
+content = content.replace(
+    '<nav aria-label="Footer Link Group"', 
+    '<nav aria-label="Footer Navigation"', 1
+)
 
-new_content = re.sub(pattern, replacement, content)
+content = content.replace(
+    '<nav aria-label="Footer Link Group"', 
+    '<nav aria-label="Footer Legal Navigation"', 1
+)
 
-with open('src/components/SiteFooter.astro', 'w') as f:
-    f.write(new_content)
+with open("src/components/SiteFooter.astro", "w") as f:
+    f.write(content)
