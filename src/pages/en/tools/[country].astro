@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import CTASection from '../../../components/CTASection.astro';
 import VerificationLimitations from '../../../components/VerificationLimitations.astro';
 
 export async function getStaticPaths() {
@@ -125,7 +126,10 @@ const getAccessTypeColor = (type: string) => {
                 )}
                 
                 <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--color-border); display: flex; justify-content: space-between; align-items: center;">
-                  <a href={tool.data.url} target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;">Visit Resource &nearr;</a>
+                  <div style="display: flex; gap: 0.5rem;">
+                    <a href="/en/contact/" class="btn btn-primary" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;">Request Search</a>
+                    <a href={tool.data.url} target="_blank" rel="noopener noreferrer" style="color: var(--color-text-muted); font-size: 0.8rem; text-decoration: underline; padding: 0.4rem;">Source &nearr;</a>
+                  </div>
                   <div style="text-align: right;">
                     <span class="text-muted" style="display: block; font-size: 0.7rem; font-weight: 500;">LANG: {(tool.data.languages || []).join(', ').toUpperCase()}</span>
                   </div>
@@ -137,4 +141,11 @@ const getAccessTypeColor = (type: string) => {
       ))
     )}
   </div>
+
+  <CTASection 
+    title="Need Help Navigating Local Registries?" 
+    text="Language barriers and strict access requirements make foreign registries difficult to use. Let DealyVIP conduct the search for you." 
+    btnText="Request Assistance" 
+    btnUrl="/en/contact/" 
+  />
 </BaseLayout>

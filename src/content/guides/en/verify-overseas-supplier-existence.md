@@ -45,5 +45,13 @@ Search the registered business address on Google Maps or local mapping equivalen
 ## Important Limitations
 Verifying existence is only layer one of due diligence. Even if a company legally exists, it does not mean they are safe to do business with. Fraudulent entities frequently register legal companies to appear legitimate for short periods before disappearing.
 
-## When Local Assistance May Be Useful
-If the state registry is not publicly accessible to foreigners, or if you need someone to physically verify that the address houses an active business rather than an empty office, coordinating an independent local professional is a practical next step.
+## How DealyVIP Can Help
+
+Navigating foreign registries, translating legal documents, and confirming physical addresses remotely is difficult and error-prone. DealyVIP provides independent verification and local assistance to secure your cross-border transactions. 
+
+Instead of guessing whether public records are accurate, **tell us what you need**. We can:
+- Verify the company's registration and tax status using local resources.
+- Review and cross-check the foundational documents provided by your supplier.
+- Coordinate a physical site visit to confirm manufacturing capacity.
+
+[Contact DealyVIP to request verification assistance](/en/contact/)

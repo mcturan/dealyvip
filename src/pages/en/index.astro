@@ -1,9 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CTASection from '../../components/CTASection.astro';
-import CountryCard from '../../components/CountryCard.astro';
-import GuideCard from '../../components/GuideCard.astro';
-import NeedCard from '../../components/NeedCard.astro';
+import ServiceCard from '../../components/ServiceCard.astro';
+import CountryCoverageCard from '../../components/CountryCoverageCard.astro';
 
 const alternatives = [
   { code: 'en', name: 'English', url: '/en/' },
@@ -13,97 +12,145 @@ const alternatives = [
 ];
 ---
 <BaseLayout 
-  title="Independent Business Verification & Local Assistance" 
-  description="DealyVIP coordinates independent verification, supplier discovery, and local assistance in Türkiye, Ukraine, Russia, and Iran." 
+  title="Practical Cross-Border Assistance & Verification" 
+  description="Tell DealyVIP what you need. We investigate, verify, search, and coordinate local assistance in complex jurisdictions." 
   lang="en" 
   alternatives={alternatives}
 >
 
-  <section class="section text-center" style="padding-top: var(--space-xl); padding-bottom: var(--space-lg);">
-    <div class="container">
-      <h1 class="display-title">Cross-Border Business,<br/>Verified on the Ground</h1>
-      <p class="lead" style="margin: 0 auto var(--space-md) auto;">
-        We coordinate independent verification, supplier discovery, and local assistance across Türkiye, Ukraine, Russia, and Iran. Avoid fraud, navigate constraints, and establish secure trade channels.
+  {/* SECTION A — HERO */}
+  <section class="section hero-section" style="padding-top: var(--space-2xl); padding-bottom: var(--space-xl); background: linear-gradient(to bottom, #f8fafc, #ffffff);">
+    <div class="container text-center">
+      <h1 class="display-title" style="margin-bottom: var(--space-md); max-width: 800px; margin-inline: auto;">
+        Cross-border business is complicated.<br/><span style="color: var(--color-primary);">Finding the truth shouldn't be.</span>
+      </h1>
+      <p class="lead text-muted" style="max-width: 700px; margin: 0 auto var(--space-lg) auto;">
+        You have a cross-border problem, verification need, sourcing need, or local coordination requirement. Tell DealyVIP what you need. We investigate, verify available information, and provide practical local assistance.
       </p>
       <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="/en/assistance/" class="btn btn-accent">Request Local Assistance</a>
-        <a href="/en/guides/" class="btn btn-outline">Read Business Guides</a>
+        <a href="/en/contact/" class="btn btn-primary" style="font-size: 1.1rem; padding: 0.75rem 2rem;">Start your request</a>
+        <a href="#how-it-works" class="btn btn-outline" style="font-size: 1.1rem; padding: 0.75rem 2rem;">See how we help</a>
+      </div>
+      
+      {/* Visual Metaphor placeholder for Hero */}
+      <div style="margin-top: var(--space-xl); padding: var(--space-lg); background: white; border-radius: 12px; box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1); border: 1px solid var(--color-border); max-width: 900px; margin-inline: auto; display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap; gap: 1rem;">
+        <div class="hero-metric">
+          <span style="display: block; font-size: 2rem; font-weight: 700; color: var(--color-slate-900);">Independent</span>
+          <span style="color: var(--color-text-muted); font-size: 0.9rem;">Fact-based research</span>
+        </div>
+        <div class="hero-metric">
+          <span style="display: block; font-size: 2rem; font-weight: 700; color: var(--color-slate-900);">Local</span>
+          <span style="color: var(--color-text-muted); font-size: 0.9rem;">On-the-ground support</span>
+        </div>
+        <div class="hero-metric">
+          <span style="display: block; font-size: 2rem; font-weight: 700; color: var(--color-slate-900);">Practical</span>
+          <span style="color: var(--color-text-muted); font-size: 0.9rem;">Actionable coordination</span>
+        </div>
       </div>
     </div>
   </section>
 
+  {/* SECTION B — WHAT DO YOU NEED? */}
   <section class="section section-bg-alt">
     <div class="container">
-      <div style="max-width: 600px; margin-bottom: var(--space-md);">
-        <h2 class="section-title">Explore by Country</h2>
-        <p class="text-muted">Regional knowledge mapping compliance environments, operational constraints, and on-the-ground reality.</p>
+      <div style="text-align: center; margin-bottom: var(--space-xl);">
+        <h2 class="section-title">What do you need help with?</h2>
+        <p class="text-muted" style="max-width: 600px; margin: 0 auto;">We don't just point you to public registries. We perform the legwork, navigate the local language, and provide evidence-based findings.</p>
       </div>
-      <div class="grid grid-cols-4">
-        <CountryCard name="Türkiye" description="Sourcing & Verification" />
-        <CountryCard name="Ukraine" description="Operating under constraints" />
-        <CountryCard name="Russia" description="Compliance & Exemptions" />
-        <CountryCard name="Iran" description="Sanctions & Restrictions" />
+      <div class="grid grid-cols-2" style="gap: var(--space-lg);">
+        <ServiceCard 
+          title="Verify & Research" 
+          description="Check if a company or business presence appears legitimate. We review available local registries, public records, and on-the-ground reality."
+          icon="search"
+        />
+        <ServiceCard 
+          title="Find a Supplier / Source" 
+          description="Looking for manufacturers or products in specific regions? We help discover and pre-qualify potential partners based on your criteria."
+          icon="box"
+        />
+        <ServiceCard 
+          title="Local Assistance" 
+          description="Need someone to visit a factory, check a physical address, or assist with local meetings? We coordinate practical ground support."
+          icon="map-pin"
+        />
+        <ServiceCard 
+          title="Cross-Border Coordination" 
+          description="Navigating complex jurisdictions, compliance requirements, or language barriers to get a deal done safely."
+          icon="globe"
+        />
       </div>
     </div>
   </section>
 
-  <section class="section">
+  {/* SECTION C — HOW IT WORKS */}
+  <section id="how-it-works" class="section">
     <div class="container">
-      <h2 class="section-title">Explore by Need</h2>
-      <div class="grid grid-cols-3">
-        <NeedCard title="Verify a Company" />
-        <NeedCard title="Find Suppliers" />
-        <NeedCard title="Visit a Factory or Business" />
-        <NeedCard title="Arrange a Business Meeting" />
-        <NeedCard title="Find Local Assistance" url="/en/assistance/" />
-        <NeedCard title="Business Travel & Communication" />
+      <h2 class="section-title text-center">How DealyVIP Works</h2>
+      <div class="grid grid-cols-4 text-center" style="gap: var(--space-md); margin-top: var(--space-lg);">
+        <div class="step-card">
+          <div class="step-number" style="font-size: 1.5rem; font-weight: bold; color: var(--color-primary); margin-bottom: 0.5rem;">1</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Tell us what you need</h3>
+          <p class="text-muted" style="font-size: 0.9rem;">Submit your problem, target company, or sourcing requirements.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number" style="font-size: 1.5rem; font-weight: bold; color: var(--color-primary); margin-bottom: 0.5rem;">2</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Scope & Review</h3>
+          <p class="text-muted" style="font-size: 0.9rem;">We review what is realistically possible and outline the approach.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number" style="font-size: 1.5rem; font-weight: bold; color: var(--color-primary); margin-bottom: 0.5rem;">3</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Research & Coordinate</h3>
+          <p class="text-muted" style="font-size: 0.9rem;">We verify public records, contact sources, or arrange local visits.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number" style="font-size: 1.5rem; font-weight: bold; color: var(--color-primary); margin-bottom: 0.5rem;">4</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Findings Delivered</h3>
+          <p class="text-muted" style="font-size: 0.9rem;">You receive an evidence-based report or actionable next steps.</p>
+        </div>
       </div>
     </div>
   </section>
 
+  {/* SECTION E — COUNTRIES */}
   <section class="section section-bg-alt">
     <div class="container">
-      <h2 class="section-title">Business Guides</h2>
-      <div class="grid grid-cols-3">
-        <GuideCard 
-          title="How to Verify a Turkish Company" 
-          category="Verification & Trust" 
-          url="/en/guides/verify-turkish-company/" 
-        />
-        <GuideCard 
-          title="Supplier & Factory Verification in Türkiye" 
-          category="Verification & Trust" 
-          url="/en/guides/supplier-factory-verification-turkiye/" 
-        />
-        <GuideCard 
-          title="How to Verify a Ukrainian Company" 
-          category="Verification & Trust" 
-          url="/en/guides/verify-ukrainian-company/" 
-        />
+      <div style="max-width: 600px; margin-bottom: var(--space-lg);">
+        <h2 class="section-title">Service Contexts</h2>
+        <p class="text-muted">We maintain focused expertise and local operational networks in specific jurisdictions.</p>
+      </div>
+      <div class="grid grid-cols-2" style="gap: var(--space-md);">
+        <CountryCoverageCard name="Türkiye" description="Extensive company verification, factory visits, and manufacturing sourcing." />
+        <CountryCoverageCard name="Ukraine" description="Operating under constraints. Verification of active businesses and logistical coordination." />
+        <CountryCoverageCard name="Russia" description="Navigating compliance environments, sanctions restrictions, and legal entity verification." />
+        <CountryCoverageCard name="Iran" description="Sanctions awareness, permissible entity checking, and risk-management research." />
       </div>
     </div>
   </section>
 
+  {/* SECTION F — TRUST & LIMITATIONS */}
   <section class="section">
-    <div class="container" style="max-width: var(--content-width); margin: 0 auto;">
-      <h2 class="section-title text-center">The DealyVIP Approach</h2>
-      <div style="display: flex; flex-direction: column; gap: var(--space-md); margin-top: var(--space-md);">
-        <div>
-          <h3>Clear Information</h3>
-          <p class="text-muted">We do not provide vague consulting. We provide exact procedural guides on how to establish trust and execute transactions in challenging environments.</p>
-        </div>
-        <div>
-          <h3>Acknowledged Limitations</h3>
-          <p class="text-muted">We state clearly what is impossible. We do not invent workarounds for hard sanctions or pretend high-risk environments are safe.</p>
-        </div>
-        <div>
-          <h3>Coordinated On-the-Ground Support</h3>
-          <p class="text-muted">When remote verification is insufficient, we coordinate with local independent professionals to physically inspect goods, visit factories, or facilitate meetings.</p>
-        </div>
+    <div class="container" style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <h2 class="section-title">Honest Boundaries</h2>
+      <div style="background: white; padding: var(--space-lg); border-radius: 8px; border: 1px solid var(--color-border); margin-top: var(--space-md);">
+        <p class="text-muted" style="margin-bottom: var(--space-sm);">
+          <strong>Evidence-Based:</strong> Our research relies on available public information, registry data, and local inquiries. We do not possess magic databases.
+        </p>
+        <p class="text-muted" style="margin-bottom: var(--space-sm);">
+          <strong>No Legal Conclusions:</strong> We provide factual findings, not legal guarantees or certified fraud-prevention.
+        </p>
+        <p class="text-muted" style="margin-bottom: 0;">
+          <strong>Compliance First:</strong> We strictly observe international sanctions boundaries and will decline requests outside permissible scopes.
+        </p>
       </div>
     </div>
   </section>
 
-  <CTASection />
+  {/* SECTION G — FINAL CTA */}
+  <CTASection 
+    title="Ready to get started?" 
+    text="Stop guessing. Let us find the facts." 
+    btnText="Request Assistance" 
+    btnUrl="/en/contact/" 
+  />
 
 </BaseLayout>

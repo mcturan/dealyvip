@@ -2,43 +2,32 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { contactConfig } from '../../config/contact';
 ---
-<BaseLayout title="Contact & Coordination" description="Request local assistance and coordination from DealyVIP." lang="en">
+<BaseLayout title="Contact & Request Assistance" description="Request research, verification, or local coordination from DealyVIP." lang="en">
   <div class="container section" style="max-width: 800px; padding-top: var(--space-xl); padding-bottom: var(--space-xl);">
     
-    <h1 class="display-title" style="margin-bottom: var(--space-md);">Contact & Coordination</h1>
+    <h1 class="display-title" style="margin-bottom: var(--space-md);">Request Assistance</h1>
     <p class="lead text-muted" style="margin-bottom: var(--space-xl); padding-bottom: var(--space-md); border-bottom: 1px solid var(--color-border);">
-      Before reaching out for local coordination or specific assistance, please review our operational boundaries and prepare the necessary information.
+      Tell us what you need. We will review your request and outline how we can assist with research, verification, or coordination.
     </p>
 
-    <div class="grid" style="grid-template-columns: 1fr 1fr; gap: var(--space-lg); margin-bottom: var(--space-xl);">
+    <div class="grid" style="grid-template-columns: 1fr; gap: var(--space-lg); margin-bottom: var(--space-xl);">
       <div style="background: #f8fafc; padding: var(--space-lg); border-radius: 8px; border: 1px solid #e2e8f0;">
-        <h2 style="font-size: 1.25rem; margin-bottom: var(--space-sm); color: var(--color-slate-900);">What to Prepare</h2>
+        <h2 style="font-size: 1.25rem; margin-bottom: var(--space-sm); color: var(--color-slate-900);">How to prepare your request:</h2>
         <ul style="padding-left: 1.25rem; margin-bottom: 0; line-height: 1.6; font-size: 0.95rem; color: var(--color-text);">
-          <li style="margin-bottom: 0.5rem;"><strong>Business Context:</strong> What exactly are you trying to achieve?</li>
-          <li style="margin-bottom: 0.5rem;"><strong>Jurisdiction:</strong> Which countries are involved?</li>
-          <li style="margin-bottom: 0.5rem;"><strong>Entity Details:</strong> Company name, registration number, or website (if known).</li>
-          <li style="margin-bottom: 0.5rem;"><strong>The Problem:</strong> What specific obstacle do you need help overcoming?</li>
+          <li style="margin-bottom: 0.5rem;"><strong>The Context:</strong> What are you trying to achieve? (e.g., verifying a supplier, scheduling a visit).</li>
+          <li style="margin-bottom: 0.5rem;"><strong>The Target:</strong> Company name, registration number, or website.</li>
+          <li style="margin-bottom: 0.5rem;"><strong>The Location:</strong> Which country/city is involved?</li>
         </ul>
-      </div>
-
-      <div style="background: #fff1f2; padding: var(--space-lg); border-radius: 8px; border: 1px solid #ffe4e6;">
-        <h2 style="font-size: 1.25rem; margin-bottom: var(--space-sm); color: #be123c;">Important Notice</h2>
-        <p style="font-size: 0.95rem; margin-bottom: 0.75rem; color: #9f1239;">
-          Do not send sensitive personal data, unredacted financial information, or bank passwords through initial communication channels.
-        </p>
-        <p style="font-size: 0.95rem; margin-bottom: 0; color: #9f1239;">
-          Review <a href="/en/what-we-do/" style="color: #be123c; text-decoration: underline;">What We Do</a> to ensure your request aligns with our capabilities. We do not provide legal or financial validation.
-        </p>
       </div>
     </div>
 
-    <h2 style="font-size: 1.5rem; margin-bottom: var(--space-md);">Communication Channels</h2>
+    <h2 style="font-size: 1.5rem; margin-bottom: var(--space-md);">Submit your request</h2>
     
     {contactConfig.publicContactEnabled ? (
       <div style="display: flex; flex-direction: column; gap: var(--space-md);">
         {contactConfig.email && (
           <a href={`mailto:${contactConfig.email}`} class="button" style="display: inline-block; padding: 0.75rem 1.5rem; background: var(--color-primary); color: white; border-radius: 4px; text-decoration: none; text-align: center; font-weight: 600;">
-            Send an Email
+            Email Us Directly
           </a>
         )}
         
@@ -50,13 +39,13 @@ import { contactConfig } from '../../config/contact';
 
         {!contactConfig.email && !contactConfig.whatsapp && !contactConfig.messagingLink && (
           <div style="padding: var(--space-md); border: 1px dashed var(--color-border); border-radius: 4px; text-align: center; color: var(--color-text-muted);">
-            <p style="margin: 0;">Public contact channels are temporarily paused while we process existing coordination requests.</p>
+            <p style="margin: 0;"><strong>Draft Collection Mode:</strong> Public contact routing is currently paused while we update our channels. Please check back soon.</p>
           </div>
         )}
       </div>
     ) : (
       <div style="padding: var(--space-lg); border: 1px solid var(--color-border); border-radius: 8px; background: var(--color-bg-alt); text-align: center;">
-        <p style="margin: 0; color: var(--color-text-muted);">Direct contact channels are currently closed for new requests. Please utilize our published verification guides and tools.</p>
+        <p style="margin: 0; color: var(--color-text-muted);">Intake is currently closed for new requests.</p>
       </div>
     )}
 

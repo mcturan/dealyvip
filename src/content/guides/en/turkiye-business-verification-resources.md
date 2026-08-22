@@ -61,3 +61,14 @@ While the government portals above confirm legal existence, the following DealyV
 - **[Finding and Evaluating Suppliers](/en/guides/supplier-factory-verification-turkiye/):** How to verify factory addresses and production capacity.
 - **[Warning Signs](/en/guides/turkish-supplier-warning-signs/):** Common red flags and identity inconsistencies to watch for.
 - **[Practical Business Assistance](/en/guides/practical-business-assistance-turkiye/):** When to escalate your checks to a local commercial lawyer or inspection agency.
+
+## How DealyVIP Can Help
+
+Navigating foreign registries, translating legal documents, and confirming physical addresses remotely is difficult and error-prone. DealyVIP provides independent verification and local assistance to secure your cross-border transactions. 
+
+Instead of guessing whether public records are accurate, **tell us what you need**. We can:
+- Verify the company's registration and tax status using local resources.
+- Review and cross-check the foundational documents provided by your supplier.
+- Coordinate a physical site visit to confirm manufacturing capacity.
+
+[Contact DealyVIP to request verification assistance](/en/contact/)

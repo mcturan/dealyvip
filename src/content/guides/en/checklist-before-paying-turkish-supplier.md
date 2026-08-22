@@ -44,3 +44,14 @@ Sending an international wire transfer is often the point of no return in cross-
 - [ ] If this is a high-value transaction, have you reached your **escalation threshold**? (i.e., Is it time to hire a local Turkish commercial lawyer to review the contract or a third-party QC agency to inspect the goods before the final balance is paid?)
 
 **General Due Diligence Practice:** If any item on this checklist raises a red flag, pause the transaction. Do not allow a supplier to pressure you into a rushed payment due to "expiring discounts" or "urgent material costs."
+
+## How DealyVIP Can Help
+
+Navigating foreign registries, translating legal documents, and confirming physical addresses remotely is difficult and error-prone. DealyVIP provides independent verification and local assistance to secure your cross-border transactions. 
+
+Instead of guessing whether public records are accurate, **tell us what you need**. We can:
+- Verify the company's registration and tax status using local resources.
+- Review and cross-check the foundational documents provided by your supplier.
+- Coordinate a physical site visit to confirm manufacturing capacity.
+
+[Contact DealyVIP to request verification assistance](/en/contact/)

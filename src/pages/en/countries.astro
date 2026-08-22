@@ -1,17 +1,40 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import CountryCard from '../../components/CountryCard.astro';
+import CountryCoverageCard from '../../components/CountryCoverageCard.astro';
+import CTASection from '../../components/CTASection.astro';
 ---
-<BaseLayout title="Countries" description="Explore business guides and assistance availability across our target countries." lang="en">
-  <div class="container section">
-    <h1 class="display-title">Locations</h1>
-    <p class="lead mb-4">Explore our target markets. Country-specific guides and detailed intelligence hubs are being actively developed during this beta phase.</p>
+<BaseLayout title="Service Locations" description="Explore DealyVIP's target markets and supported jurisdictions." lang="en">
+  <div class="container section" style="max-width: 900px; padding-top: var(--space-xl);">
+    <h1 class="display-title" style="margin-bottom: var(--space-md);">Service Locations</h1>
+    <p class="lead text-muted" style="margin-bottom: var(--space-xl); border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-lg);">
+      We specialize in jurisdictions where information is fragmented, language barriers are significant, and remote verification frequently fails.
+    </p>
     
-    <div class="grid grid-cols-2">
-      <CountryCard name="Türkiye" description="Sourcing & Verification. (Guides coming soon)" />
-      <CountryCard name="Ukraine" description="Operating under constraints. (Guides coming soon)" />
-      <CountryCard name="Russia" description="Compliance & Exemptions. (Guides coming soon)" />
-      <CountryCard name="Iran" description="Sanctions & Restrictions. (Guides coming soon)" />
+    <div class="grid grid-cols-2" style="gap: var(--space-lg); margin-bottom: var(--space-2xl);">
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <CountryCoverageCard name="Türkiye" description="Extensive company verification, local registry checks, factory visits, and manufacturing sourcing. Our most comprehensive operational capability." />
+        <a href="/en/tools/turkiye/" class="btn btn-outline" style="text-align: center;">View Türkiye Information</a>
+      </div>
+      
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <CountryCoverageCard name="Ukraine" description="Verification of active businesses and logistical coordination. Services are subject to severe situational constraints." />
+        <a href="/en/tools/ukraine/" class="btn btn-outline" style="text-align: center;">View Ukraine Information</a>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <CountryCoverageCard name="Russia" description="Navigating compliance environments, hard sanctions restrictions, and entity existence verification. Strict compliance checks apply." />
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <CountryCoverageCard name="Iran" description="Sanctions awareness, permissible entity checking, and risk-management research." />
+      </div>
     </div>
   </div>
+
+  <CTASection 
+    title="Need assistance in these regions?" 
+    text="Tell us your specific requirement and we will review our operational capacity." 
+    btnText="Contact Us" 
+    btnUrl="/en/contact/" 
+  />
 </BaseLayout>

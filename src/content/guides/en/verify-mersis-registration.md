@@ -55,3 +55,14 @@ If you require deeper verification but do not have e-Devlet access:
 
 1. **Ask the Supplier:** Request that the supplier download and send you their recent Trade Registry Gazette (Ticaret Sicili Gazetesi) publications and their Chamber of Commerce Activity Certificate (Faaliyet Belgesi). You can then cross-reference the numbers on these documents with the public MERSİS lookup.
 2. **Use Local Assistance:** If the transaction carries high risk, engage a local Turkish attorney or a verified local commercial consultant who possesses the necessary e-Devlet access to conduct a comprehensive background check on your behalf.
+
+## How DealyVIP Can Help
+
+Navigating foreign registries, translating legal documents, and confirming physical addresses remotely is difficult and error-prone. DealyVIP provides independent verification and local assistance to secure your cross-border transactions. 
+
+Instead of guessing whether public records are accurate, **tell us what you need**. We can:
+- Verify the company's registration and tax status using local resources.
+- Review and cross-check the foundational documents provided by your supplier.
+- Coordinate a physical site visit to confirm manufacturing capacity.
+
+[Contact DealyVIP to request verification assistance](/en/contact/)

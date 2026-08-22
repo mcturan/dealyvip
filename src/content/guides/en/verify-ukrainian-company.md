@@ -43,5 +43,13 @@ Because the official government registry UI can be difficult for foreigners to n
 ## Important Limitations (Time-Sensitive)
 **Martial Law Restrictions:** Access to the official Unified State Register fluctuates. The Ukrainian government occasionally restricts public access to protect sensitive data during the war. You may be required to solve CAPTCHAs, use a VPN if geo-blocked, or possess a Ukrainian Electronic Digital Signature (KEP/EDS) for deep searches.
 
-## When Local Assistance May Be Useful
-Because of the digital barriers and the necessity to understand Ukrainian legal structures, complex due diligence should be handled by a licensed Ukrainian lawyer. If you simply need basic on-the-ground communication or document coordination in Kyiv or Lviv, independent professionals can assist. [See our contact information](/en/contact/).
+## How DealyVIP Can Help
+
+Navigating foreign registries, translating legal documents, and confirming physical addresses remotely is difficult and error-prone. DealyVIP provides independent verification and local assistance to secure your cross-border transactions. 
+
+Instead of guessing whether public records are accurate, **tell us what you need**. We can:
+- Verify the company's registration and tax status using local resources.
+- Review and cross-check the foundational documents provided by your supplier.
+- Coordinate a physical site visit to confirm manufacturing capacity.
+
+[Contact DealyVIP to request verification assistance](/en/contact/)

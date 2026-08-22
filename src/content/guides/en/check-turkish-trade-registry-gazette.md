@@ -54,3 +54,14 @@ To perform effective due diligence, you must cross-check the Gazette against oth
 2. **Compare with Supplier Documents:** Ask the supplier for their most recent Signature Circular (İmza Sirküleri). The names and signature authorities listed there must match the appointments published in the Gazette.
 
 If you are unable to navigate the Turkish interface or need to guarantee the current active status of a board member, engaging a local Turkish commercial lawyer is recommended.
+
+## How DealyVIP Can Help
+
+Navigating foreign registries, translating legal documents, and confirming physical addresses remotely is difficult and error-prone. DealyVIP provides independent verification and local assistance to secure your cross-border transactions. 
+
+Instead of guessing whether public records are accurate, **tell us what you need**. We can:
+- Verify the company's registration and tax status using local resources.
+- Review and cross-check the foundational documents provided by your supplier.
+- Coordinate a physical site visit to confirm manufacturing capacity.
+
+[Contact DealyVIP to request verification assistance](/en/contact/)

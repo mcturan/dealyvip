@@ -51,3 +51,14 @@ It **does not guarantee**:
 - That the bank account listed on the PDF belongs to the company (the government does not verify the banking details typed onto the invoice template).
 
 Always combine invoice verification with comprehensive due diligence on the company's identity and banking information.
+
+## How DealyVIP Can Help
+
+Navigating foreign registries, translating legal documents, and confirming physical addresses remotely is difficult and error-prone. DealyVIP provides independent verification and local assistance to secure your cross-border transactions. 
+
+Instead of guessing whether public records are accurate, **tell us what you need**. We can:
+- Verify the company's registration and tax status using local resources.
+- Review and cross-check the foundational documents provided by your supplier.
+- Coordinate a physical site visit to confirm manufacturing capacity.
+
+[Contact DealyVIP to request verification assistance](/en/contact/)

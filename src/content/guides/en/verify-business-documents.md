@@ -52,3 +52,14 @@ There is no universal global database of verified business documents. Verificati
 
 ## When Professional Help is Needed
 DealyVIP provides independent logistical and communication coordination. We do not provide document forensics, legal validation, or technical QA. If you require legal certainty regarding a contract, or technical validation of a customs certificate, you must engage a licensed lawyer or a certified customs broker in the target jurisdiction.
+
+## How DealyVIP Can Help
+
+Navigating foreign registries, translating legal documents, and confirming physical addresses remotely is difficult and error-prone. DealyVIP provides independent verification and local assistance to secure your cross-border transactions. 
+
+Instead of guessing whether public records are accurate, **tell us what you need**. We can:
+- Verify the company's registration and tax status using local resources.
+- Review and cross-check the foundational documents provided by your supplier.
+- Coordinate a physical site visit to confirm manufacturing capacity.
+
+[Contact DealyVIP to request verification assistance](/en/contact/)

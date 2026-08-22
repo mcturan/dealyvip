@@ -2,25 +2,41 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CTASection from '../../components/CTASection.astro';
 ---
-<BaseLayout title="About Us" description="About DealyVIP - Cross-border business verification and assistance." lang="en">
-  <div class="container section">
-    <h1 class="display-title">About DealyVIP</h1>
-    <div style="max-width: var(--content-width); margin-bottom: var(--space-xl);">
-      <p class="lead mb-2">DealyVIP focuses on cross-border business verification, establishing trust, and coordinating local assistance in restricted and emerging markets.</p>
+<BaseLayout title="About DealyVIP" description="Practical cross-border business assistance, verification, and sourcing." lang="en">
+  <div class="container section" style="max-width: 800px; padding-top: var(--space-xl); padding-bottom: var(--space-xl);">
+    
+    <h1 class="display-title" style="margin-bottom: var(--space-lg);">About DealyVIP</h1>
+    
+    <div style="font-size: 1.1rem; line-height: 1.7; color: var(--color-slate-800);">
+      <p style="margin-bottom: var(--space-md);">
+        Cross-border business should not rely on blind trust. When you engage with companies, suppliers, or partners in foreign jurisdictions, public information is often opaque, and local realities are complex.
+      </p>
       
-      <h2 class="section-title">Our Focus</h2>
-      <p class="mb-2">We address the core challenges of international trade in high-risk jurisdictions, specifically focusing on <strong>Türkiye, Ukraine, Russia, and Iran</strong>. We help businesses verify local entities, discover verified suppliers, and navigate complex operational environments safely.</p>
+      <p style="margin-bottom: var(--space-md);">
+        DealyVIP was founded to bridge the gap between remote due diligence and on-the-ground reality. We provide independent research, verification of available information, sourcing, and local coordination.
+      </p>
+
+      <h2 style="margin-top: var(--space-lg); margin-bottom: var(--space-md); font-size: 1.5rem;">Our Core Principles</h2>
       
-      <h2 class="section-title">How We Work</h2>
-      <p class="mb-2">DealyVIP operates primarily as an informational hub and coordination service. We provide clear, direct guides for verifying partners. When remote verification is impossible or insufficient, we evaluate requests to coordinate with independent on-the-ground professionals for factory visits, meetings, and physical verification.</p>
-      
-      <h2 class="section-title">Operational Limitations</h2>
-      <ul class="mb-2" style="padding-left: 1.5rem;">
-        <li class="mb-1"><strong>No Sanctions Evasion:</strong> We strictly follow international compliance laws. We do not invent workarounds for hard sanctions.</li>
-        <li class="mb-1"><strong>No False Guarantees:</strong> We provide structured information, but we do not guarantee the absolute safety of any transaction. We do not provide banking or escrow services.</li>
-        <li class="mb-1"><strong>Coordination Only:</strong> We act as coordinators for local assistance. Availability depends on the specific request and regional capabilities.</li>
+      <ul style="padding-left: 1.5rem; margin-bottom: var(--space-lg);">
+        <li style="margin-bottom: 0.5rem;"><strong>Factual Evidence:</strong> We rely on primary registries, public records, and physical local checks where necessary.</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Honest Boundaries:</strong> We do not provide magical guarantees. If a risk cannot be eliminated, we tell you.</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Practical Utility:</strong> We go beyond high-level consulting by actually coordinating the specific task you need done.</li>
       </ul>
+
+      <h2 style="margin-top: var(--space-lg); margin-bottom: var(--space-md); font-size: 1.5rem;">Where We Operate</h2>
+      
+      <p style="margin-bottom: var(--space-md);">
+        Our current coverage focuses on complex markets where remote verification frequently fails: <strong>Türkiye, Ukraine, Russia, and Iran</strong>. We maintain local networks capable of navigating the unique bureaucratic, linguistic, and operational challenges of these environments.
+      </p>
+
     </div>
   </div>
-  <CTASection />
+
+  <CTASection 
+    title="Discuss your project" 
+    text="Tell us what you need. We'll outline how we can assist." 
+    btnText="Start your request" 
+    btnUrl="/en/contact/" 
+  />
 </BaseLayout>

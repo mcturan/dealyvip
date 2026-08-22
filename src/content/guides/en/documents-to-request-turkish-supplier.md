@@ -54,3 +54,14 @@ Once you move past initial verification and into the transaction phase, you will
 - **Certificate of Origin (Menşe Şahadetnamesi):** Proves where the goods were manufactured, often required for customs duties.
 
 **General Due Diligence Practice:** Obtaining documents is only the first step. You must cross-check the information on these documents against official registries (like MERSİS) and ensure absolute consistency across all paperwork. If you cannot read Turkish legal documents, hire a local professional to review them.
+
+## How DealyVIP Can Help
+
+Navigating foreign registries, translating legal documents, and confirming physical addresses remotely is difficult and error-prone. DealyVIP provides independent verification and local assistance to secure your cross-border transactions. 
+
+Instead of guessing whether public records are accurate, **tell us what you need**. We can:
+- Verify the company's registration and tax status using local resources.
+- Review and cross-check the foundational documents provided by your supplier.
+- Coordinate a physical site visit to confirm manufacturing capacity.
+
+[Contact DealyVIP to request verification assistance](/en/contact/)

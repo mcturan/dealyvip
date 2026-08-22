@@ -45,3 +45,14 @@ If you encounter these warning signs, stop the transaction. Request official reg
 
 ## When Local Coordination May Be Useful
 If the supplier provides excuses for remote verification, proposing an in-person visit by a local independent professional is the ultimate test. Fraudsters will usually cut contact when faced with a physical visit. If you need local visit coordination, explore our business assistance options.
+
+## How DealyVIP Can Help
+
+Navigating foreign registries, translating legal documents, and confirming physical addresses remotely is difficult and error-prone. DealyVIP provides independent verification and local assistance to secure your cross-border transactions. 
+
+Instead of guessing whether public records are accurate, **tell us what you need**. We can:
+- Verify the company's registration and tax status using local resources.
+- Review and cross-check the foundational documents provided by your supplier.
+- Coordinate a physical site visit to confirm manufacturing capacity.
+
+[Contact DealyVIP to request verification assistance](/en/contact/)
