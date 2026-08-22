@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout 
+  title="Page Not Found" 
+  description="The page you are looking for does not exist." 
+  lang="en"
+>
+  <div class="container" style="padding: var(--space-2xl) 0; text-align: center; max-width: 600px; margin: 0 auto;">
+    <h1 style="font-size: 3rem; color: var(--color-primary); margin-bottom: var(--space-md);">404</h1>
+    <h2 style="margin-bottom: var(--space-lg);">Page Not Found</h2>
+    <p class="text-muted" style="margin-bottom: var(--space-xl);">
+      We couldn't find the page you were looking for. It might have been moved or deleted.
+    </p>
+    <div style="display: flex; gap: var(--space-md); justify-content: center;">
+      <a href="/en/" class="btn btn-primary">Return to Homepage</a>
+      <a href="/en/tools/" class="btn btn-outline">View Verification Tools</a>
+    </div>
+  </div>
+</BaseLayout>

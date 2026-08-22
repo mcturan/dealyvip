@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+.astro/
+.vercel/
+.netlify/
+
+# secrets
+.env
+.env.*
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# temp scripts
+*.py

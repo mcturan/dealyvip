@@ -10,18 +10,34 @@ interface Props {
   description: string;
   canonical?: string;
   alternatives?: AlternateLink[];
+  image?: string;
 }
 
-const { title, description, canonical, alternatives = [] } = Astro.props;
+const { title, description, canonical, alternatives = [], image = '/og-default.jpg' } = Astro.props;
+const siteUrl = Astro.site ? Astro.site.toString().replace(/\/$/, '') : 'http://localhost:3000';
+const canonicalUrl = canonical || `${siteUrl}${Astro.url.pathname}`;
+const ogImage = `${siteUrl}${image}`;
 ---
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="apple-touch-icon" href="/favicon.svg" /> content="width=device-width, initial-scale=1" />
 <title>{title} | DealyVIP</title>
 <meta name="description" content={description} />
-{canonical && <link rel="canonical" href={canonical} />}
+<link rel="canonical" href={canonicalUrl} />
 <meta property="og:title" content={`${title} | DealyVIP`} />
 <meta property="og:description" content={description} />
 <meta property="og:type" content="website" />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:image" content={ogImage} />
+<meta name="twitter:card" content="summary_large_image" />
 {alternatives.map(alt => (
-  <link rel="alternate" hreflang={alt.code} href={`https://dealyvip.com${alt.url}`} />
+  <link rel="alternate" hreflang={alt.code} href={`${siteUrl}${alt.url}`} />
 ))}
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "DealyVIP",
+  "url": siteUrl
+})} />
