@@ -4,6 +4,7 @@ description: "Key warning signs that should trigger deeper investigation before 
 language: "en"
 topic: "Verification & Trust"
 relatedGuides: ["verify-overseas-supplier-existence", "verify-business-documents"]
+status: "draft"
 lastUpdated: 2024-05-20
 ---
 

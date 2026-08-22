@@ -6,6 +6,7 @@ country: "turkiye"
 topic: "Due Diligence"
 relatedTools: []
 relatedGuides: ["due-diligence-turkish-company", "practical-business-assistance-turkiye"]
+status: "beta"
 lastUpdated: 2026-08-22
 ---
 

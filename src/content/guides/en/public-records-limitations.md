@@ -4,6 +4,7 @@ description: "Understanding the boundary between a registry check and full comme
 language: "en"
 topic: "Verification & Trust"
 relatedGuides: ["verify-overseas-supplier-existence"]
+status: "draft"
 lastUpdated: 2024-05-20
 ---
 

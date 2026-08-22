@@ -16,7 +16,7 @@ const guides = await getCollection('guides', ({ id }) => id.startsWith('tr/'));
         return (
           <GuideCard 
             title={guide.data.title} 
-            category={guide.data.topic} 
+            category={guide.data.topic || ""} 
             url={`/tr/guides/${slug}/`}
           />
         );

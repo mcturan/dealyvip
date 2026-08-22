@@ -6,6 +6,7 @@ country: "turkiye"
 topic: "Due Diligence"
 relatedTools: []
 relatedGuides: ["due-diligence-turkish-company", "turkish-supplier-warning-signs"]
+status: "beta"
 lastUpdated: 2026-08-22
 ---
 

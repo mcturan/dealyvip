@@ -4,6 +4,7 @@ description: "A framework for verifying the identity and registration of interna
 language: "en"
 topic: "Verification & Trust"
 relatedGuides: ["overseas-supplier-red-flags", "public-records-limitations"]
+status: "draft"
 lastUpdated: 2024-05-20
 ---
 

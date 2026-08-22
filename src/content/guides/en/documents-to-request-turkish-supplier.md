@@ -6,6 +6,7 @@ country: "turkiye"
 topic: "Due Diligence"
 relatedTools: []
 relatedGuides: ["verify-turkish-company", "verify-turkish-company-representative"]
+status: "draft"
 lastUpdated: 2026-08-22
 ---
 

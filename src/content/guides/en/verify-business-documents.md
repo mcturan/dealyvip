@@ -4,6 +4,7 @@ description: "Practical strategies for assessing the authenticity of certificate
 language: "en"
 topic: "Verification & Trust"
 relatedGuides: ["overseas-supplier-red-flags", "public-records-limitations"]
+status: "draft"
 lastUpdated: 2024-05-20
 ---
 

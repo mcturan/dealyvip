@@ -4,6 +4,7 @@ description: "How to arrange an on-site observation visit when you cannot travel
 language: "en"
 topic: "Local Assistance & Travel"
 relatedGuides: ["prepare-business-visit-supplier"]
+status: "draft"
 lastUpdated: 2024-05-20
 ---
 

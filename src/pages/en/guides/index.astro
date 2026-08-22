@@ -19,7 +19,7 @@ const guides = await getCollection('guides', ({ id }) => id.startsWith('en/'));
         return (
           <GuideCard 
             title={guide.data.title} 
-            category={guide.data.topic} 
+            category={guide.data.topic || ""} 
             url={`/en/guides/${slug}/`}
           />
         );

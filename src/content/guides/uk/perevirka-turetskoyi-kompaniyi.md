@@ -4,6 +4,7 @@ description: "Дізнайтеся, як перевірити реєстраці
 language: "uk"
 topic: "Verification & Trust"
 relatedTools: ["turkiye-mersis", "turkiye-ticaret-sicil", "turkiye-ivd"]
+status: "beta"
 lastUpdated: 2024-05-20
 ---
 

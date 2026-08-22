@@ -4,6 +4,7 @@ description: "Yurtdışındaki bir tedarikçiyi veya fabrikayı ziyaret etmeden 
 language: "tr"
 topic: "Local Assistance & Travel"
 relatedGuides: ["yurtdisi-tedarikci-dogrulama"]
+status: "beta"
 lastUpdated: 2024-05-20
 ---
 

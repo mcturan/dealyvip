@@ -6,6 +6,7 @@ country: "turkiye"
 topic: "Due Diligence"
 relatedTools: ["turkiye-mersis"]
 relatedGuides: ["verify-turkish-company", "turkish-supplier-warning-signs"]
+status: "draft"
 lastUpdated: 2026-08-22
 ---
 

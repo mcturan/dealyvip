@@ -6,6 +6,7 @@ country: "turkiye"
 topic: "Assistance"
 relatedTools: []
 relatedGuides: ["due-diligence-turkish-company", "supplier-factory-verification-turkiye"]
+status: "beta"
 lastUpdated: 2026-08-22
 ---
 

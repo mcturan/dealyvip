@@ -6,6 +6,7 @@ country: "turkiye"
 topic: "Due Diligence"
 relatedTools: ["turkiye-mersis", "turkiye-ticaret-sicil"]
 relatedGuides: ["verify-turkish-company", "check-turkish-e-invoice"]
+status: "beta"
 lastUpdated: 2026-08-22
 ---
 

@@ -5,6 +5,7 @@ language: "en"
 country: "ukraine"
 topic: "Verification & Trust"
 relatedTools: ["ukraine-usr", "ukraine-opendatabot", "ukraine-youcontrol"]
+status: "beta"
 lastUpdated: 2024-05-20
 ---
 

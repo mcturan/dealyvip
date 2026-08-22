@@ -4,6 +4,7 @@ description: "How to structure your initial inquiry to get taken seriously and e
 language: "en"
 topic: "Supplier Search & Matchmaking"
 relatedGuides: ["verify-overseas-supplier-existence"]
+status: "draft"
 lastUpdated: 2024-05-20
 ---
 

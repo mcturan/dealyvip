@@ -6,6 +6,7 @@ country: "turkiye"
 topic: "Verification"
 relatedTools: ["turkiye-ivd"]
 relatedGuides: ["due-diligence-turkish-company"]
+status: "draft"
 lastUpdated: 2026-08-22
 ---
 

@@ -6,6 +6,7 @@ country: "turkiye"
 topic: "Verification"
 relatedTools: ["turkiye-ticaret-sicil"]
 relatedGuides: ["verify-turkish-company", "documents-to-request-turkish-supplier"]
+status: "beta"
 lastUpdated: 2026-08-22
 ---
 

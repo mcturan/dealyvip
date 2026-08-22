@@ -6,6 +6,7 @@ country: "turkiye"
 topic: "Due Diligence"
 relatedTools: []
 relatedGuides: ["verify-turkish-company-address", "checklist-before-paying-turkish-supplier"]
+status: "draft"
 lastUpdated: 2026-08-22
 ---
 

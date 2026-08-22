@@ -4,6 +4,7 @@ description: "Ukrayna'daki bir şirketin resmi sicil kayıtlarını nasıl kontr
 language: "tr"
 topic: "Verification & Trust"
 relatedTools: ["ukraine-usr", "ukraine-opendatabot", "ukraine-youcontrol"]
+status: "beta"
 lastUpdated: 2024-05-20
 ---
 

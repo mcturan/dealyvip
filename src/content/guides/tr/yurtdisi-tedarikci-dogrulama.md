@@ -4,6 +4,7 @@ description: "Uluslararası ticarette sahte tedarikçileri tespit etme ve ticari
 language: "tr"
 topic: "Verification & Trust"
 relatedGuides: ["ukrayna-sirket-sorgulama", "fabrika-ziyareti-hazirligi"]
+status: "beta"
 lastUpdated: 2024-05-20
 ---
 

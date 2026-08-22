@@ -4,6 +4,7 @@ description: "Як правильно підготуватися до відря
 language: "uk"
 topic: "Local Assistance & Travel"
 relatedGuides: ["perevirka-zavodu-v-turechchyni"]
+status: "beta"
 lastUpdated: 2024-05-20
 ---
 

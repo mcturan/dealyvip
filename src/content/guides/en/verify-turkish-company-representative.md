@@ -6,6 +6,7 @@ country: "turkiye"
 topic: "Verification"
 relatedTools: ["turkiye-ticaret-sicil"]
 relatedGuides: ["documents-to-request-turkish-supplier", "check-turkish-trade-registry-gazette"]
+status: "draft"
 lastUpdated: 2026-08-22
 ---
 

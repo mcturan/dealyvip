@@ -6,6 +6,7 @@ country: "turkiye"
 topic: "Verification"
 relatedTools: ["turkiye-mersis", "turkiye-ticaret-sicil", "turkiye-ivd"]
 relatedGuides: ["verify-mersis-registration", "due-diligence-turkish-company"]
+status: "beta"
 lastUpdated: 2026-08-22
 ---
 

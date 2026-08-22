@@ -4,6 +4,7 @@ description: "Як відрізнити торгову компанію від �
 language: "uk"
 topic: "Verification & Trust"
 relatedGuides: ["perevirka-turetskoyi-kompaniyi", "pidhotovka-do-vizytu-na-zavod"]
+status: "beta"
 lastUpdated: 2024-05-20
 ---
 

@@ -4,6 +4,7 @@ description: "A practical checklist for maximizing the value of an international
 language: "en"
 topic: "Local Assistance & Travel"
 relatedGuides: ["coordinate-factory-supplier-visit", "interpreter-international-business-meetings"]
+status: "draft"
 lastUpdated: 2024-05-20
 ---
 
