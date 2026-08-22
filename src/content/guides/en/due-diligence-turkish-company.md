@@ -9,7 +9,7 @@ relatedGuides: ["verify-turkish-company", "check-turkish-e-invoice"]
 lastUpdated: 2026-08-22
 ---
 
-Finding a company in a government database is only the first step. **Due diligence** is the comprehensive process of ensuring the entity you are talking to is capable, legitimate, and safe to transact with.
+Finding a company in an official database is only the first step. **Due diligence** is the comprehensive process of ensuring the entity you are talking to is capable, legitimate, and safe to transact with.
 
 This checklist provides a structured framework for international buyers evaluating a Turkish business partner.
 

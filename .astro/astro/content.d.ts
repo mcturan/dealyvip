@@ -148,9 +148,30 @@ declare module 'astro:content' {
   collection: "guides";
   data: InferEntrySchema<"guides">
 } & { render(): Render[".md"] };
+"en/check-turkish-trade-registry-gazette.md": {
+	id: "en/check-turkish-trade-registry-gazette.md";
+  slug: "en/check-turkish-trade-registry-gazette";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"en/checklist-before-paying-turkish-supplier.md": {
+	id: "en/checklist-before-paying-turkish-supplier.md";
+  slug: "en/checklist-before-paying-turkish-supplier";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
 "en/coordinate-factory-supplier-visit.md": {
 	id: "en/coordinate-factory-supplier-visit.md";
   slug: "en/coordinate-factory-supplier-visit";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"en/documents-to-request-turkish-supplier.md": {
+	id: "en/documents-to-request-turkish-supplier.md";
+  slug: "en/documents-to-request-turkish-supplier";
   body: string;
   collection: "guides";
   data: InferEntrySchema<"guides">
@@ -211,6 +232,20 @@ declare module 'astro:content' {
   collection: "guides";
   data: InferEntrySchema<"guides">
 } & { render(): Render[".md"] };
+"en/turkish-supplier-warning-signs.md": {
+	id: "en/turkish-supplier-warning-signs.md";
+  slug: "en/turkish-supplier-warning-signs";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"en/turkiye-business-verification-resources.md": {
+	id: "en/turkiye-business-verification-resources.md";
+  slug: "en/turkiye-business-verification-resources";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
 "en/verify-business-documents.md": {
 	id: "en/verify-business-documents.md";
   slug: "en/verify-business-documents";
@@ -228,6 +263,20 @@ declare module 'astro:content' {
 "en/verify-overseas-supplier-existence.md": {
 	id: "en/verify-overseas-supplier-existence.md";
   slug: "en/verify-overseas-supplier-existence";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"en/verify-turkish-company-address.md": {
+	id: "en/verify-turkish-company-address.md";
+  slug: "en/verify-turkish-company-address";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"en/verify-turkish-company-representative.md": {
+	id: "en/verify-turkish-company-representative.md";
+  slug: "en/verify-turkish-company-representative";
   body: string;
   collection: "guides";
   data: InferEntrySchema<"guides">

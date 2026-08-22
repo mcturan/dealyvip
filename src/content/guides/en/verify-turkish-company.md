@@ -15,7 +15,7 @@ This guide explains how international buyers can use official Turkish registries
 
 ## What You Can Verify Publicly
 
-Using the official Turkish government portals, you can generally confirm:
+Using official Turkish state and statutory portals, you can generally confirm:
 - The legal name of the company.
 - The company's Tax Identification Number (Vergi Kimlik Numarası - VKN) or MERSİS number.
 - The registered headquarters address.
@@ -62,4 +62,4 @@ Finding a company in an official registry **does not guarantee** that the compan
 
 ## When Local Assistance May Be Useful
 
-If you are dealing with a high-value order or face language barriers navigating Turkish government sites, you may need a local professional (such as a Turkish lawyer, accountant, or commercial investigator) to pull full authenticated records via e-Devlet and perform physical site visits.
+If you are dealing with a high-value order or face language barriers navigating Turkish official and registry sites, you may need a local professional (such as a Turkish lawyer, accountant, or commercial investigator) to pull full authenticated records via e-Devlet and perform physical site visits.
