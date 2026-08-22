@@ -141,9 +141,9 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"guides": {
-"en/business-assistance-turkiye-ukraine.md": {
-	id: "en/business-assistance-turkiye-ukraine.md";
-  slug: "en/business-assistance-turkiye-ukraine";
+"en/check-turkish-e-invoice.md": {
+	id: "en/check-turkish-e-invoice.md";
+  slug: "en/check-turkish-e-invoice";
   body: string;
   collection: "guides";
   data: InferEntrySchema<"guides">
@@ -151,6 +151,13 @@ declare module 'astro:content' {
 "en/coordinate-factory-supplier-visit.md": {
 	id: "en/coordinate-factory-supplier-visit.md";
   slug: "en/coordinate-factory-supplier-visit";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"en/due-diligence-turkish-company.md": {
+	id: "en/due-diligence-turkish-company.md";
+  slug: "en/due-diligence-turkish-company";
   body: string;
   collection: "guides";
   data: InferEntrySchema<"guides">
@@ -165,6 +172,13 @@ declare module 'astro:content' {
 "en/overseas-supplier-red-flags.md": {
 	id: "en/overseas-supplier-red-flags.md";
   slug: "en/overseas-supplier-red-flags";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"en/practical-business-assistance-turkiye.md": {
+	id: "en/practical-business-assistance-turkiye.md";
+  slug: "en/practical-business-assistance-turkiye";
   body: string;
   collection: "guides";
   data: InferEntrySchema<"guides">
@@ -200,6 +214,13 @@ declare module 'astro:content' {
 "en/verify-business-documents.md": {
 	id: "en/verify-business-documents.md";
   slug: "en/verify-business-documents";
+  body: string;
+  collection: "guides";
+  data: InferEntrySchema<"guides">
+} & { render(): Render[".md"] };
+"en/verify-mersis-registration.md": {
+	id: "en/verify-mersis-registration.md";
+  slug: "en/verify-mersis-registration";
   body: string;
   collection: "guides";
   data: InferEntrySchema<"guides">
